@@ -44,12 +44,11 @@ namespace AutoControlAppPC
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string strCmdText;
-            strCmdText = "/C ping -t google.com";
+
+            string strCmdText = "ping howkteam.com";          
             Process cmd = new Process();
             ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = strCmdText;
+            startInfo.FileName = "cmd.exe";         
          //   startInfo.CreateNoWindow = true;
             startInfo.UseShellExecute = false;
             startInfo.RedirectStandardError = true;
