@@ -1,0 +1,12 @@
+E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\bin\Debug\AutoControlAppPC.exe.config
+E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\bin\Debug\AutoControlAppPC.exe
+E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\bin\Debug\AutoControlAppPC.pdb
+E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\obj\Debug\AutoControlAppPC.csprojAssemblyReference.cache
+E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\obj\Debug\AutoControlAppPC.Form1.resources
+E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\obj\Debug\AutoControlAppPC.Properties.Resources.resources
+E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\obj\Debug\AutoControlAppPC.csproj.GenerateResource.cache
+E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\obj\Debug\AutoControlAppPC.csproj.CoreCompileInputs.cache
+E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\obj\Debug\AutoControlAppPC.exe
+E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\obj\Debug\AutoControlAppPC.pdb
+E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\bin\Debug\KAutoHelper.dll
+E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\obj\Debug\AutoControlAppPC.csproj.CopyComplete

@@ -1,7 +1,0 @@
-D:\GITHUB\AutoControlAppPC\AutoControlAppPC\AutoControlAppPC\bin\Debug\AutoControlAppPC.exe
-D:\GITHUB\AutoControlAppPC\AutoControlAppPC\AutoControlAppPC\bin\Debug\AutoControlAppPC.pdb
-D:\GITHUB\AutoControlAppPC\AutoControlAppPC\AutoControlAppPC\obj\x86\Debug\AutoControlAppPC.Form1.resources
-D:\GITHUB\AutoControlAppPC\AutoControlAppPC\AutoControlAppPC\obj\x86\Debug\AutoControlAppPC.Properties.Resources.resources
-D:\GITHUB\AutoControlAppPC\AutoControlAppPC\AutoControlAppPC\obj\x86\Debug\AutoControlAppPC.csproj.GenerateResource.Cache
-D:\GITHUB\AutoControlAppPC\AutoControlAppPC\AutoControlAppPC\obj\x86\Debug\AutoControlAppPC.exe
-D:\GITHUB\AutoControlAppPC\AutoControlAppPC\AutoControlAppPC\obj\x86\Debug\AutoControlAppPC.pdb
