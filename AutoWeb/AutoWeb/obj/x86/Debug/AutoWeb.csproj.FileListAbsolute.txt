@@ -1,0 +1,10 @@
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\bin\Debug\AutoWeb.exe
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\bin\Debug\AutoWeb.pdb
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\obj\x86\Debug\AutoWeb.csprojResolveAssemblyReference.cache
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\obj\x86\Debug\AutoWeb.FormMain.resources
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\obj\x86\Debug\AutoWeb.Properties.Resources.resources
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\obj\x86\Debug\AutoWeb.csproj.GenerateResource.Cache
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\obj\x86\Debug\AutoWeb.exe
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\obj\x86\Debug\AutoWeb.pdb
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\bin\Debug\DaoAutoWeb.dll
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\bin\Debug\DaoAutoWeb.pdb

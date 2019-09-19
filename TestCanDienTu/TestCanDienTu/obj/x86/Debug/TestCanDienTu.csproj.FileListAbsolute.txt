@@ -1,0 +1,10 @@
+D:\GITHUB\AutoControlAppPC\TestCanDienTu\TestCanDienTu\obj\x86\Debug\TestCanDienTu.Form1.resources
+D:\GITHUB\AutoControlAppPC\TestCanDienTu\TestCanDienTu\obj\x86\Debug\TestCanDienTu.Properties.Resources.resources
+D:\GITHUB\AutoControlAppPC\TestCanDienTu\TestCanDienTu\obj\x86\Debug\TestCanDienTu.csproj.GenerateResource.Cache
+D:\GITHUB\AutoControlAppPC\TestCanDienTu\TestCanDienTu\bin\Debug\TestCanDienTu.exe
+D:\GITHUB\AutoControlAppPC\TestCanDienTu\TestCanDienTu\bin\Debug\TestCanDienTu.pdb
+D:\GITHUB\AutoControlAppPC\TestCanDienTu\TestCanDienTu\obj\x86\Debug\TestCanDienTu.exe
+D:\GITHUB\AutoControlAppPC\TestCanDienTu\TestCanDienTu\obj\x86\Debug\TestCanDienTu.pdb
+D:\GITHUB\AutoControlAppPC\TestCanDienTu\TestCanDienTu\bin\Debug\System.EnterpriseServices.dll
+D:\GITHUB\AutoControlAppPC\TestCanDienTu\TestCanDienTu\bin\Debug\System.Web.Services.dll
+D:\GITHUB\AutoControlAppPC\TestCanDienTu\TestCanDienTu\obj\x86\Debug\TestCanDienTu.csprojResolveAssemblyReference.cache

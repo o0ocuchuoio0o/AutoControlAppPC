@@ -10,3 +10,6 @@ E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng kh
 E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\obj\Debug\AutoControlAppPC.pdb
 E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\bin\Debug\KAutoHelper.dll
 E:\Work server\Team\Video hướng dẫn\Auto C#\Điều khiển ứng dụng khác\Project\AutoControlAppPC\AutoControlAppPC\obj\Debug\AutoControlAppPC.csproj.CopyComplete
+D:\GITHUB\AutoControlAppPC\AutoControlAppPC\AutoControlAppPC\bin\Debug\AutoControlAppPC.exe.config
+D:\GITHUB\AutoControlAppPC\AutoControlAppPC\AutoControlAppPC\obj\Debug\AutoControlAppPC.exe
+D:\GITHUB\AutoControlAppPC\AutoControlAppPC\AutoControlAppPC\obj\Debug\AutoControlAppPC.pdb
