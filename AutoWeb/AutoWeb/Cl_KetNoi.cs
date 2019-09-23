@@ -12,7 +12,7 @@ namespace AutoWeb
         {
             CauHinhServerBE server = new CauHinhServerBE();
             CauHinhServerBL serverxuly = new CauHinhServerBL();
-            server = serverxuly.docdulieu(Environment.CurrentDirectory + "/lib/CauHinhServer.xml");
+            server = serverxuly.docdulieu(Environment.CurrentDirectory + "/CauHinhServer.xml");
             return new SqlConnection("server=" + server.Namer1 + ";database=" + server.Data1 + ";user id=" + server.User1 + ";password=" + server.Pass1 + "");
         }
 
@@ -20,7 +20,7 @@ namespace AutoWeb
         {
             CauHinhServerBE server = new CauHinhServerBE();
             CauHinhServerBL serverxuly = new CauHinhServerBL();
-            server = serverxuly.docdulieu(Environment.CurrentDirectory + "/lib/CauHinhServer.xml");
+            server = serverxuly.docdulieu(Environment.CurrentDirectory + "/CauHinhServer.xml");
             string m_connect = "server=" + server.Namer1 + ";database=" + server.Data1 + ";user id=" + server.User1 + ";password=" + server.Pass1 + "";
             try
             {
