@@ -2,3 +2,4 @@ D:\GITHUB\AutoControlAppPC\AutoWeb\DaoAutoWeb\bin\Debug\DaoAutoWeb.dll
 D:\GITHUB\AutoControlAppPC\AutoWeb\DaoAutoWeb\bin\Debug\DaoAutoWeb.pdb
 D:\GITHUB\AutoControlAppPC\AutoWeb\DaoAutoWeb\obj\Debug\DaoAutoWeb.dll
 D:\GITHUB\AutoControlAppPC\AutoWeb\DaoAutoWeb\obj\Debug\DaoAutoWeb.pdb
+D:\GITHUB\AutoControlAppPC\AutoWeb\DaoAutoWeb\obj\Debug\DaoAutoWeb.csprojResolveAssemblyReference.cache

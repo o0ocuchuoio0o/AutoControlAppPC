@@ -8,3 +8,10 @@ D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\obj\x86\Debug\AutoWeb.exe
 D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\obj\x86\Debug\AutoWeb.pdb
 D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\bin\Debug\DaoAutoWeb.dll
 D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\bin\Debug\DaoAutoWeb.pdb
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\bin\Debug\AutoWeb.exe.config
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\obj\x86\Debug\AutoWeb.FormTest.resources
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\bin\Debug\DocDuLieu.dll
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\bin\Debug\Excel.dll
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\bin\Debug\WebDriver.dll
+D:\GITHUB\AutoControlAppPC\AutoWeb\AutoWeb\bin\Debug\WebDriver.Support.dll

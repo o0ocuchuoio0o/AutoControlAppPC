@@ -1,0 +1,8 @@
+D:\GITHUB\AutoControlAppPC\AutoWin\AutoWin\obj\x86\Debug\AutoWin.csprojResolveAssemblyReference.cache
+D:\GITHUB\AutoControlAppPC\AutoWin\AutoWin\obj\x86\Debug\AutoWin.Form1.resources
+D:\GITHUB\AutoControlAppPC\AutoWin\AutoWin\obj\x86\Debug\AutoWin.Properties.Resources.resources
+D:\GITHUB\AutoControlAppPC\AutoWin\AutoWin\obj\x86\Debug\AutoWin.csproj.GenerateResource.Cache
+D:\GITHUB\AutoControlAppPC\AutoWin\AutoWin\bin\Debug\AutoWin.exe
+D:\GITHUB\AutoControlAppPC\AutoWin\AutoWin\bin\Debug\AutoWin.pdb
+D:\GITHUB\AutoControlAppPC\AutoWin\AutoWin\obj\x86\Debug\AutoWin.exe
+D:\GITHUB\AutoControlAppPC\AutoWin\AutoWin\obj\x86\Debug\AutoWin.pdb

@@ -38,6 +38,13 @@ namespace AutoWeb
 
         [FindsBy(How = How.XPath, Using = "//*[@id='btnSearch']/i")]
         public IWebElement m_TimKiemPhat;
+
+
+        [FindsBy(How = How.XPath, Using = "//*[@id='act-accaept-yes']")]
+        public IWebElement m_Loi1;
+
+        [FindsBy(How = How.XPath, Using = "//*[@id='act-accept-yes']")]
+        public IWebElement m_Loi2;
        
         public void login(string taikhoan,string matkhau,string tungay,string denngay)
         {
@@ -77,69 +84,83 @@ namespace AutoWeb
             }
             catch { }
             Thread.Sleep(3000);
-            try
-            {
-                m_TimKiemPhat.Click();
+            int status = 0;
+            try { m_Loi1.Click();
+            status = 1;
             }
             catch { }
-            Thread.Sleep(timernghi);
-            try
+            Thread.Sleep(1000);
+            try { m_Loi2.Click();
+            status = 1;
+            }
+            catch { }
+            Thread.Sleep(1000);
+            if (status == 0)
             {
-                List<IWebElement> table = PropretiesCollection.driver.FindElements(By.XPath("//*[@class='k-selectable']/tbody/tr")).ToList();
-                foreach (IWebElement field in table)
+                try
                 {
-
-                    string I_tenbuuta = "";
-                    string I_sodienthoai = "";
-                    string I_mabuucuc = "";
-                    string I_tenbuucuc = "";
-                    string I_tentuyenphat = "";
-                    string I_SLgiaobuuta = "0";
-                    string I_ThanhCong = "0";
-                    string I_KhongThanhCong = "0";
-                    List<IWebElement> listcot = field.FindElements(By.TagName("td")).ToList();
-                    int _count = listcot.Count;
-                    int i = 0;
-                    foreach (IWebElement cot in listcot)
-                    {
-                        if (i == 0)
-                        {
-                            I_tenbuuta = cot.Text;//GetAttribute("text");
-                        }
-                        if (i == 1)
-                        {
-                            I_sodienthoai = cot.Text;
-                        }
-                        if (i == 2)
-                        {
-                            I_mabuucuc = cot.Text;
-                        }
-                        if (i == 3)
-                        {
-                            I_tenbuucuc = cot.Text;
-                        }
-                        if (i == 4)
-                        {
-                            I_tentuyenphat = cot.Text;
-                        }
-                        if (i == 5)
-                        {
-                            I_SLgiaobuuta = cot.Text.Replace(",", "").Replace(".", "");
-                        }
-                        if (i == 6)
-                        {
-                            I_ThanhCong = cot.Text.Replace(",", "").Replace(".", "");
-                        }
-                        if (i == 7)
-                        {
-                            I_KhongThanhCong = cot.Text.Replace(",", "").Replace(".", "");
-                        }
-                        i++;
-                    }
-                    dt.Rows.Add("0", I_tenbuuta, I_sodienthoai, I_mabuucuc, I_tenbuucuc, I_tentuyenphat, I_SLgiaobuuta, I_ThanhCong, I_KhongThanhCong);
+                    m_TimKiemPhat.Click();
                 }
+                catch { }
+                Thread.Sleep(timernghi);
+                try
+                {
+                    List<IWebElement> table = PropretiesCollection.driver.FindElements(By.XPath("//*[@class='k-selectable']/tbody/tr")).ToList();
+                    foreach (IWebElement field in table)
+                    {
+
+                        string I_tenbuuta = "";
+                        string I_sodienthoai = "";
+                        string I_mabuucuc = "";
+                        string I_tenbuucuc = "";
+                        string I_tentuyenphat = "";
+                        string I_SLgiaobuuta = "0";
+                        string I_ThanhCong = "0";
+                        string I_KhongThanhCong = "0";
+                        List<IWebElement> listcot = field.FindElements(By.TagName("td")).ToList();
+                        int _count = listcot.Count;
+                        int i = 0;
+                        foreach (IWebElement cot in listcot)
+                        {
+                            if (i == 0)
+                            {
+                                I_tenbuuta = cot.Text;//GetAttribute("text");
+                            }
+                            if (i == 1)
+                            {
+                                I_sodienthoai = cot.Text;
+                            }
+                            if (i == 2)
+                            {
+                                I_mabuucuc = cot.Text;
+                            }
+                            if (i == 3)
+                            {
+                                I_tenbuucuc = cot.Text;
+                            }
+                            if (i == 4)
+                            {
+                                I_tentuyenphat = cot.Text;
+                            }
+                            if (i == 5)
+                            {
+                                I_SLgiaobuuta = cot.Text.Replace(",", "").Replace(".", "");
+                            }
+                            if (i == 6)
+                            {
+                                I_ThanhCong = cot.Text.Replace(",", "").Replace(".", "");
+                            }
+                            if (i == 7)
+                            {
+                                I_KhongThanhCong = cot.Text.Replace(",", "").Replace(".", "");
+                            }
+                            i++;
+                        }
+                        dt.Rows.Add("0", I_tenbuuta, I_sodienthoai, I_mabuucuc, I_tenbuucuc, I_tentuyenphat, I_SLgiaobuuta, I_ThanhCong, I_KhongThanhCong);
+                    }
+                }
+                catch { }
             }
-            catch { }
             return dt;
         }
         #endregion

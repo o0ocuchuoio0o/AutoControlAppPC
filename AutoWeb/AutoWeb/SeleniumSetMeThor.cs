@@ -13,7 +13,7 @@ namespace AutoWeb
 
            element.SendKeys(values);           
         }
-
+       
         public static void Click(IWebElement element)
         {
            element.Click();           

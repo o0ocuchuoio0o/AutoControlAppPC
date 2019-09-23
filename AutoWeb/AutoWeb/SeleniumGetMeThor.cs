@@ -12,6 +12,10 @@ namespace AutoWeb
         {           
           return element.GetAttribute("value");           
         }
+        public static string GetText2(IWebElement element)
+        {
+            return element.GetAttribute("innerHTML");
+        }
         public static string GetTextLink(IWebElement element)
         {
             return element.GetAttribute("src");

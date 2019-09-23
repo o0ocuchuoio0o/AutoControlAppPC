@@ -34,5 +34,32 @@ namespace DaoAutoWeb
             }
         }
 
+        public DataTable DanhSachSoLieu(SqlConnection conn, string ngay)
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("sp_smp_mau_solieungay", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandTimeout = 72000;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            try
+            {
+                cmd.Parameters.AddWithValue("@ngay", ngay);
+                da.Fill(ds, "DanhSach");
+                return ds.Tables["DanhSach"];
+            }
+            catch
+            {
+                throw;
+            }
+            finally
+            {
+                cmd.Dispose();
+                conn.Close();
+                conn.Dispose();
+            }
+
+        }
+
     }
 }
