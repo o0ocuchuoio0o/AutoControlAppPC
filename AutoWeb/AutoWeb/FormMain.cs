@@ -69,7 +69,7 @@ namespace AutoWeb
         public void Form1_OnNewHome()
         {
             ISynchronizeInvoke i = (ISynchronizeInvoke)this;
-            if (i.InvokeRequired)//tab
+            if (i.InvokeRequired)
             {
                 NewHome dd = new NewHome(Form1_OnNewHome);
                 i.BeginInvoke(dd, null);
