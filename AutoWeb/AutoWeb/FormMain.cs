@@ -114,14 +114,20 @@ namespace AutoWeb
             {
                 txtlog.Text = "";
                 DataTable tablebuucuc = (DataTable)listbuucuc.DataSource;
-              
+                
                 if (tablebuucuc.Rows.Count > 0)
                 {
                     #region // lay thông tin phát
+                    string profile_add = "Profile";
+                    string profile_new = "Profile\\ThongTinPhat"; 
                     ChromePerformanceLoggingPreferences perfLogPrefs = new ChromePerformanceLoggingPreferences();
                     perfLogPrefs.AddTracingCategories(new string[] { "devtools.timeline" });
                     ChromeOptions options = new ChromeOptions();
                     options.AddArguments("--disable-notifications");
+                    if (!Directory.Exists(profile_add)) { Directory.CreateDirectory(profile_add); }                   
+                    options.AddArgument("user-data-dir=" + Application.StartupPath + "\\" + profile_new);
+                    options.AddArgument("--window-size=1500,900");
+                    options.AddArgument("--disable-infobars");                  
                     options.PerformanceLoggingPreferences = perfLogPrefs;
                     options.SetLoggingPreference(LogType.Driver, LogLevel.All);
                     options.SetLoggingPreference("performance", LogLevel.All);
