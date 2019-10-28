@@ -1,0 +1,9 @@
+D:\GITHUB\AutoControlAppPC\HAHA\HAHA\bin\Debug\HAHA.exe.config
+D:\GITHUB\AutoControlAppPC\HAHA\HAHA\bin\Debug\HAHA.exe
+D:\GITHUB\AutoControlAppPC\HAHA\HAHA\bin\Debug\HAHA.pdb
+D:\GITHUB\AutoControlAppPC\HAHA\HAHA\obj\x86\Debug\HAHA.csprojResolveAssemblyReference.cache
+D:\GITHUB\AutoControlAppPC\HAHA\HAHA\obj\x86\Debug\HAHA.Form1.resources
+D:\GITHUB\AutoControlAppPC\HAHA\HAHA\obj\x86\Debug\HAHA.Properties.Resources.resources
+D:\GITHUB\AutoControlAppPC\HAHA\HAHA\obj\x86\Debug\HAHA.csproj.GenerateResource.Cache
+D:\GITHUB\AutoControlAppPC\HAHA\HAHA\obj\x86\Debug\HAHA.exe
+D:\GITHUB\AutoControlAppPC\HAHA\HAHA\obj\x86\Debug\HAHA.pdb
