@@ -23,7 +23,7 @@ namespace AutoWeb
         public FormMain()
         {
             InitializeComponent();
-            Cl_KetNoi.sqlDependency();
+            //Cl_KetNoi.sqlDependency();
            
         }
 
@@ -36,14 +36,17 @@ namespace AutoWeb
             SqlCommand cmd = new SqlCommand(sql, conn);
             cmd.CommandType = CommandType.Text;
             cmd.CommandTimeout = 72000;
-            SqlDependency de = new SqlDependency(cmd);
-            de.OnChange += new OnChangeEventHandler(de_OnChange);
-            //SqlDataAdapter da = new SqlDataAdapter(cmd);
+            //SqlDependency de = new SqlDependency(cmd);
+            //de.OnChange += new OnChangeEventHandler(de_OnChange);
+           // SqlDataAdapter da = new SqlDataAdapter(cmd);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
             try
             {
-                dt.Load(cmd.ExecuteReader(CommandBehavior.CloseConnection));
-                listbuucuc.DataSource = dt;
+                //dt.Load(cmd.ExecuteReader(CommandBehavior.CloseConnection));
+                da.Fill(ds, "DanhSach");
+                listbuucuc.DataSource = ds.Tables["DanhSach"];
             }
             catch
             {
@@ -97,7 +100,7 @@ namespace AutoWeb
             {
                 Directory.CreateDirectory(@"C:\TempExcel");
             }
-            OnNewHome += new NewHome(Form1_OnNewHome);//tab
+           // OnNewHome += new NewHome(Form1_OnNewHome);//tab
             //load data vao datagrid
             DanhSachBuuCuc(Cl_KetNoi.hamketnoisql());
         }

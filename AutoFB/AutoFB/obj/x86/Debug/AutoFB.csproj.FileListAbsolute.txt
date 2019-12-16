@@ -1,0 +1,8 @@
+D:\GITHUB\AutoControlAppPC\AutoFB\AutoFB\bin\Debug\AutoFB.exe
+D:\GITHUB\AutoControlAppPC\AutoFB\AutoFB\bin\Debug\AutoFB.pdb
+D:\GITHUB\AutoControlAppPC\AutoFB\AutoFB\obj\x86\Debug\AutoFB.csprojResolveAssemblyReference.cache
+D:\GITHUB\AutoControlAppPC\AutoFB\AutoFB\obj\x86\Debug\AutoFB.Form1.resources
+D:\GITHUB\AutoControlAppPC\AutoFB\AutoFB\obj\x86\Debug\AutoFB.Properties.Resources.resources
+D:\GITHUB\AutoControlAppPC\AutoFB\AutoFB\obj\x86\Debug\AutoFB.csproj.GenerateResource.Cache
+D:\GITHUB\AutoControlAppPC\AutoFB\AutoFB\obj\x86\Debug\AutoFB.exe
+D:\GITHUB\AutoControlAppPC\AutoFB\AutoFB\obj\x86\Debug\AutoFB.pdb
