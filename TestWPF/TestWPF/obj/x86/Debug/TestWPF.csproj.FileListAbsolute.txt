@@ -1,0 +1,11 @@
+D:\GITHUB\AutoControlAppPC\TestWPF\TestWPF\bin\Debug\TestWPF.exe
+D:\GITHUB\AutoControlAppPC\TestWPF\TestWPF\bin\Debug\TestWPF.pdb
+D:\GITHUB\AutoControlAppPC\TestWPF\TestWPF\obj\x86\Debug\MainWindow.baml
+D:\GITHUB\AutoControlAppPC\TestWPF\TestWPF\obj\x86\Debug\MainWindow.g.cs
+D:\GITHUB\AutoControlAppPC\TestWPF\TestWPF\obj\x86\Debug\App.g.cs
+D:\GITHUB\AutoControlAppPC\TestWPF\TestWPF\obj\x86\Debug\TestWPF_MarkupCompile.cache
+D:\GITHUB\AutoControlAppPC\TestWPF\TestWPF\obj\x86\Debug\TestWPF.g.resources
+D:\GITHUB\AutoControlAppPC\TestWPF\TestWPF\obj\x86\Debug\TestWPF.Properties.Resources.resources
+D:\GITHUB\AutoControlAppPC\TestWPF\TestWPF\obj\x86\Debug\TestWPF.csproj.GenerateResource.Cache
+D:\GITHUB\AutoControlAppPC\TestWPF\TestWPF\obj\x86\Debug\TestWPF.exe
+D:\GITHUB\AutoControlAppPC\TestWPF\TestWPF\obj\x86\Debug\TestWPF.pdb
