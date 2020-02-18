@@ -1,16 +1,9 @@
-[5492:1240:1028/082742.349:WARNING:discovery_network_list_win.cc(196)] Failed to open Wlan client handle: 1062
-[5492:996:1028/082748.397:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: http://thongtinphat.vnpost.vn/Security/SignIn (0)
-[5492:996:1028/082750.378:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token u in JSON at position 0", source: http://thongtinphat.vnpost.vn/Security/SignIn (1)
-[5492:996:1028/082750.425:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token u in JSON at position 0", source: http://thongtinphat.vnpost.vn/Security/SignIn (1)
-[5492:996:1028/082750.844:INFO:CONSOLE(7393)] "document.registerElement is deprecated and will be removed in M80, around February 2020. Please use window.customElements.define instead. See https://www.chromestatus.com/features/4642138092470272 and https://developers.google.com/web/updates/2019/07/web-components-time-to-upgrade for more details.", source: http://thongtinphat.vnpost.vn/Assets/plugin/treeview/js/jstree.js (7393)
-[5492:996:1028/082753.667:INFO:CONSOLE(7393)] "document.registerElement is deprecated and will be removed in M80, around February 2020. Please use window.customElements.define instead. See https://www.chromestatus.com/features/4642138092470272 and https://developers.google.com/web/updates/2019/07/web-components-time-to-upgrade for more details.", source: http://thongtinphat.vnpost.vn/Assets/plugin/treeview/js/jstree.js (7393)
-[5492:996:1028/083210.648:WARNING:oom_memory_details.cc(44)] Tab Discards Memory details (2 ms):
-Tab [Quản lý tình hình sử dụng phần mềm báo phát SMP] 69 MB
-GPU [] 67 MB
-Browser 25 MB
-Extension [Chrome Automation Extension] 18 MB
-Utility [Network Service] 11 MB
-Utility [Tracing] 10 MB
-
-[5492:996:1028/085951.493:WARNING:pref_notifier_impl.cc(36)] Pref observer for browser.relaunch_notification_period found at shutdown.
-[5492:996:1028/085951.493:WARNING:pref_notifier_impl.cc(36)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[2184:11956:0218/154340.272:WARNING:discovery_network_list_win.cc(196)] Failed to open Wlan client handle: 1062
+[2184:8344:0218/154341.046:WARNING:backend_impl.cc(1835)] Destroying invalid entry.
+[2184:15640:0218/154346.972:WARNING:CONSOLE(0)] "A cookie associated with a cross-site resource at http://google.com/ was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at https://www.chromestatus.com/feature/5088147346030592 and https://www.chromestatus.com/feature/5633521622188032.", source: chrome-search://local-ntp/local-ntp.html (0)
+[2184:15640:0218/154349.823:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: http://thongtinphat.vnpost.vn/Security/SignIn (0)
+[2184:15640:0218/154351.032:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token u in JSON at position 0", source: http://thongtinphat.vnpost.vn/Security/SignIn (1)
+[2184:15640:0218/154351.039:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token u in JSON at position 0", source: http://thongtinphat.vnpost.vn/Security/SignIn (1)
+[2184:15640:0218/154351.336:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq)", source: http://thongtinphat.vnpost.vn/Security/SignIn (0)
+[2184:15640:0218/154356.664:WARNING:pref_notifier_impl.cc(40)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[2184:15640:0218/154356.664:WARNING:pref_notifier_impl.cc(40)] Pref observer for browser.relaunch_notification_period found at shutdown.

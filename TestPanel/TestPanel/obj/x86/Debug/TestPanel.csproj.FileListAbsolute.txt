@@ -1,7 +1,0 @@
-D:\GITHUB\AutoControlAppPC\TestPanel\TestPanel\bin\Debug\TestPanel.exe
-D:\GITHUB\AutoControlAppPC\TestPanel\TestPanel\bin\Debug\TestPanel.pdb
-D:\GITHUB\AutoControlAppPC\TestPanel\TestPanel\obj\x86\Debug\TestPanel.Form1.resources
-D:\GITHUB\AutoControlAppPC\TestPanel\TestPanel\obj\x86\Debug\TestPanel.Properties.Resources.resources
-D:\GITHUB\AutoControlAppPC\TestPanel\TestPanel\obj\x86\Debug\TestPanel.csproj.GenerateResource.Cache
-D:\GITHUB\AutoControlAppPC\TestPanel\TestPanel\obj\x86\Debug\TestPanel.exe
-D:\GITHUB\AutoControlAppPC\TestPanel\TestPanel\obj\x86\Debug\TestPanel.pdb

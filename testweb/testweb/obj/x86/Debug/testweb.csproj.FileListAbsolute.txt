@@ -1,0 +1,8 @@
+D:\GITHUB\AutoControlAppPC\testweb\testweb\bin\Debug\testweb.exe
+D:\GITHUB\AutoControlAppPC\testweb\testweb\bin\Debug\testweb.pdb
+D:\GITHUB\AutoControlAppPC\testweb\testweb\obj\x86\Debug\testweb.csprojResolveAssemblyReference.cache
+D:\GITHUB\AutoControlAppPC\testweb\testweb\obj\x86\Debug\testweb.Form1.resources
+D:\GITHUB\AutoControlAppPC\testweb\testweb\obj\x86\Debug\testweb.Properties.Resources.resources
+D:\GITHUB\AutoControlAppPC\testweb\testweb\obj\x86\Debug\testweb.csproj.GenerateResource.Cache
+D:\GITHUB\AutoControlAppPC\testweb\testweb\obj\x86\Debug\testweb.exe
+D:\GITHUB\AutoControlAppPC\testweb\testweb\obj\x86\Debug\testweb.pdb
