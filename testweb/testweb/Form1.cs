@@ -19,7 +19,7 @@ namespace testweb
             InitializeComponent();
         }
 
-        private static async todo(string title)
+        private void todo(string title)
         {
             
                 PropretiesCollection.driver = new ChromeDriver();
@@ -58,6 +58,16 @@ namespace testweb
 
                 }
             }
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,4 @@
+D:\Demo\DocCongCOM\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Demo\DocCongCOM\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Demo\DocCongCOM\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+D:\Demo\DocCongCOM\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb

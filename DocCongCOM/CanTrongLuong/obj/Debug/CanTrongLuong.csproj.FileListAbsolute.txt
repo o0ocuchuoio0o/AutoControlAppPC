@@ -1,0 +1,5 @@
+D:\Demo\DocCongCOM\CanTrongLuong\bin\Debug\CanTrongLuong.dll
+D:\Demo\DocCongCOM\CanTrongLuong\bin\Debug\CanTrongLuong.pdb
+D:\Demo\DocCongCOM\CanTrongLuong\obj\Debug\CanTrongLuong.dll
+D:\Demo\DocCongCOM\CanTrongLuong\obj\Debug\CanTrongLuong.pdb
+D:\Demo\DocCongCOM\CanTrongLuong\obj\Debug\CanTrongLuong.csprojResolveAssemblyReference.cache

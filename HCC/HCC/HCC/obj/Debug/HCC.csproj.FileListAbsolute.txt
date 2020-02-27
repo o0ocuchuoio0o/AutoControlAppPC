@@ -1,0 +1,9 @@
+D:\GITHUB\AutoControlAppPC\HCC\HCC\HCC\bin\HCC.dll
+D:\GITHUB\AutoControlAppPC\HCC\HCC\HCC\bin\HCC.pdb
+D:\GITHUB\AutoControlAppPC\HCC\HCC\HCC\bin\Ext.Net.xml
+D:\GITHUB\AutoControlAppPC\HCC\HCC\HCC\bin\Ext.Net.Utilities.xml
+D:\GITHUB\AutoControlAppPC\HCC\HCC\HCC\bin\Newtonsoft.Json.xml
+D:\GITHUB\AutoControlAppPC\HCC\HCC\HCC\bin\Transformer.NET.xml
+D:\GITHUB\AutoControlAppPC\HCC\HCC\HCC\obj\Debug\HCC.csprojResolveAssemblyReference.cache
+D:\GITHUB\AutoControlAppPC\HCC\HCC\HCC\obj\Debug\HCC.dll
+D:\GITHUB\AutoControlAppPC\HCC\HCC\HCC\obj\Debug\HCC.pdb

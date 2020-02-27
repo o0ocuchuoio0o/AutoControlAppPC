@@ -1,0 +1,16 @@
+D:\Demo\DocCongCOM\DocCongCOM\bin\Debug\DocCongCOM.exe.config
+D:\Demo\DocCongCOM\DocCongCOM\bin\Debug\DocCongCOM.exe
+D:\Demo\DocCongCOM\DocCongCOM\bin\Debug\DocCongCOM.pdb
+D:\Demo\DocCongCOM\DocCongCOM\bin\Debug\CanTrongLuong.dll
+D:\Demo\DocCongCOM\DocCongCOM\bin\Debug\CanTrongLuong.pdb
+D:\Demo\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.csprojResolveAssemblyReference.cache
+D:\Demo\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.Form1.resources
+D:\Demo\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.Form2.resources
+D:\Demo\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.Form3.resources
+D:\Demo\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.Properties.Resources.resources
+D:\Demo\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.csproj.GenerateResource.Cache
+D:\Demo\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.exe
+D:\Demo\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.pdb
+C:\Users\Administrator\Downloads\DocCongCOM\DocCongCOM\bin\Debug\DocCongCOM.exe.config
+C:\Users\Administrator\Downloads\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.exe
+C:\Users\Administrator\Downloads\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.pdb

@@ -30,6 +30,7 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.txtsoluong = new System.Windows.Forms.DomainUpDown();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // button1
@@ -50,6 +51,11 @@
             this.txtsoluong.TabIndex = 1;
             this.txtsoluong.Text = "2";
             // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -67,6 +73,7 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DomainUpDown txtsoluong;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
