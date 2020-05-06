@@ -38,11 +38,12 @@ namespace DocCongCOM
 
         private void btn_ghi_Click(object sender, EventArgs e)
         {
-            CanTrongLuong.CanTrongLuong db = new CanTrongLuong.CanTrongLuong(cbbPort.Text);
-            double so = db.DocTrongLuong();
-            txt_so.Text = so.ToString();
-            rtbTrongLuong.AppendText(so.ToString() + Environment.NewLine);
-            rtbTrongLuong.ScrollToCaret();
+            //CanTrongLuong.CanTrongLuong db = new CanTrongLuong.CanTrongLuong(cbbPort.Text);
+            
+            //double so = db.LayTrongLuong();
+            //txt_so.Text = so.ToString();
+            //rtbTrongLuong.AppendText(so.ToString() + Environment.NewLine);
+            //rtbTrongLuong.ScrollToCaret();
 
             //string tem = db.DuLieuGoc();
             //txt_so.Text = tem;
@@ -118,6 +119,13 @@ namespace DocCongCOM
         public void AddDataMethod(String myString)
         {
             txtSoLieuDong2.AppendText(myString);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CanTrongLuong.CanTrongLuong test=new CanTrongLuong.CanTrongLuong(cbbPort.Text);
+            double a = test.StringToDouble("=00101.06(kg)");
+            MessageBox.Show((a*1000).ToString());  
         }
     }
 }

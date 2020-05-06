@@ -1,0 +1,11 @@
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\KiemSoatCuoiNgay\bin\KiemSoatCuoiNgay.dll
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\KiemSoatCuoiNgay\bin\KiemSoatCuoiNgay.pdb
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\KiemSoatCuoiNgay\bin\Ext.Net.xml
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\KiemSoatCuoiNgay\bin\Ext.Net.Utilities.xml
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\KiemSoatCuoiNgay\bin\Newtonsoft.Json.xml
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\KiemSoatCuoiNgay\bin\Transformer.NET.xml
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\KiemSoatCuoiNgay\obj\Debug\KiemSoatCuoiNgay.csprojResolveAssemblyReference.cache
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\KiemSoatCuoiNgay\obj\Debug\KiemSoatCuoiNgay.dll
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\KiemSoatCuoiNgay\obj\Debug\KiemSoatCuoiNgay.pdb
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\KiemSoatCuoiNgay\bin\DaoKiemSoatCuoiNgay.dll
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\KiemSoatCuoiNgay\bin\DaoKiemSoatCuoiNgay.pdb

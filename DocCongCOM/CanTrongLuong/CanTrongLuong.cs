@@ -5,6 +5,7 @@ using System.Text;
 using System.Data;
 using System.IO.Ports;
 using System.Threading;
+using System.Text.RegularExpressions;
 
 namespace CanTrongLuong
 {
@@ -16,7 +17,7 @@ namespace CanTrongLuong
         StopBits _StopBits;
         int _DataBits;
 
-        public double LayTrongLuong()
+        public string LayTrongLuong()
         {
             // Create a new SerialPort object with default settings.
             SerialPort SerialPort1 = new SerialPort();
@@ -28,7 +29,7 @@ namespace CanTrongLuong
             SerialPort1.DataBits = _DataBits;
             SerialPort1.StopBits = _StopBits;// SerialPort1.StopBits = StopBits.One;
             SerialPort1.Handshake = Handshake.None;
-
+          
             // Set the read/write timeouts
             SerialPort1.ReadTimeout = 50;
             SerialPort1.WriteTimeout = 500;
@@ -52,12 +53,13 @@ namespace CanTrongLuong
                 try
                 {
                     temp = SerialPort1.ReadLine();
-                    //temp = SerialPort1.ReadExisting();
+                   // temp = SerialPort1.ReadExisting();
+                   
                 }
                 catch
                 {
                     SerialPort1.Close();
-                    return 0;
+                    return temp;
                 }
                 
 
@@ -74,7 +76,7 @@ namespace CanTrongLuong
                     {
 
                     }
-                    return sove;
+                    return sove.ToString();
                 }
                 message += temp;
                 t++;
@@ -99,9 +101,31 @@ namespace CanTrongLuong
             {
                 throw ex;
             }
-            return sove2;
+            return message;
         }
-        
+
+        public double StringToDouble(string input)
+        {
+          
+            string kq = "";
+            string[] numbers = Regex.Split(input, @"\D+");
+
+            foreach (string value in numbers)
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    if (kq != "")
+                    {
+                        kq = kq + "," + value.ToString();
+                    }
+                    else {
+                        kq = kq + value.ToString();
+                    }
+                }
+            }
+            return double.Parse(kq.ToString());
+        }
+
         private string XyLyChuoi2(string SoLieuBanDau)
         {
             SoLieuBanDau = LocChuoi(SoLieuBanDau);
@@ -162,6 +186,7 @@ namespace CanTrongLuong
             _Parity = Parity.None;
             _StopBits = StopBits.One;
             _DataBits = 8;
+            
         }
 
         public bool KiemKetNoi()
@@ -283,7 +308,7 @@ namespace CanTrongLuong
             return sove2;
         }
 
-        public string DuLieuGoc()
+        public double DocTrongLuong()
         {
             // Create a new SerialPort object with default settings.
             SerialPort SerialPort1 = new SerialPort();
@@ -305,6 +330,7 @@ namespace CanTrongLuong
             {
                 SerialPort1.Open();
                 temp = SerialPort1.ReadLine();
+
             }
             catch (Exception ex)
             {
@@ -313,9 +339,9 @@ namespace CanTrongLuong
             finally
             {
                 SerialPort1.Close();
-            }            
-            
-            return temp;
+            }
+
+            return StringToDouble(temp);
         }
     }
 }

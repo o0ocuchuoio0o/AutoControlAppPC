@@ -14,3 +14,16 @@ D:\Demo\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.pdb
 C:\Users\Administrator\Downloads\DocCongCOM\DocCongCOM\bin\Debug\DocCongCOM.exe.config
 C:\Users\Administrator\Downloads\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.exe
 C:\Users\Administrator\Downloads\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.pdb
+D:\GITHUB\AutoControlAppPC\DocCongCOM\DocCongCOM\bin\Debug\DocCongCOM.exe.config
+D:\GITHUB\AutoControlAppPC\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.exe
+D:\GITHUB\AutoControlAppPC\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.pdb
+D:\GITHUB\AutoControlAppPC\DocCongCOM\DocCongCOM\bin\Debug\DocCongCOM.exe
+D:\GITHUB\AutoControlAppPC\DocCongCOM\DocCongCOM\bin\Debug\DocCongCOM.pdb
+D:\GITHUB\AutoControlAppPC\DocCongCOM\DocCongCOM\bin\Debug\CanTrongLuong.dll
+D:\GITHUB\AutoControlAppPC\DocCongCOM\DocCongCOM\bin\Debug\CanTrongLuong.pdb
+D:\GITHUB\AutoControlAppPC\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.csprojResolveAssemblyReference.cache
+D:\GITHUB\AutoControlAppPC\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.Form1.resources
+D:\GITHUB\AutoControlAppPC\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.Form2.resources
+D:\GITHUB\AutoControlAppPC\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.Form3.resources
+D:\GITHUB\AutoControlAppPC\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.Properties.Resources.resources
+D:\GITHUB\AutoControlAppPC\DocCongCOM\DocCongCOM\obj\x86\Debug\DocCongCOM.csproj.GenerateResource.Cache

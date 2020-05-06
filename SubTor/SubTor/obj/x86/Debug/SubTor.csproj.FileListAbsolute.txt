@@ -1,0 +1,8 @@
+D:\GITHUB\AutoControlAppPC\SubTor\SubTor\bin\Debug\SubTor.exe
+D:\GITHUB\AutoControlAppPC\SubTor\SubTor\bin\Debug\SubTor.pdb
+D:\GITHUB\AutoControlAppPC\SubTor\SubTor\obj\x86\Debug\SubTor.csprojResolveAssemblyReference.cache
+D:\GITHUB\AutoControlAppPC\SubTor\SubTor\obj\x86\Debug\SubTor.Form1.resources
+D:\GITHUB\AutoControlAppPC\SubTor\SubTor\obj\x86\Debug\SubTor.Properties.Resources.resources
+D:\GITHUB\AutoControlAppPC\SubTor\SubTor\obj\x86\Debug\SubTor.csproj.GenerateResource.Cache
+D:\GITHUB\AutoControlAppPC\SubTor\SubTor\obj\x86\Debug\SubTor.exe
+D:\GITHUB\AutoControlAppPC\SubTor\SubTor\obj\x86\Debug\SubTor.pdb

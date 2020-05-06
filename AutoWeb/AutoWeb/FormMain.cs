@@ -92,8 +92,8 @@ namespace AutoWeb
 
         private void khoitao()
         {
-            txttungay.Text = DateTime.Now.ToString("MM/dd/yyyy");
-            txtngaychatluong.Text = DateTime.Now.ToString("MM/dd/yyyy");
+            //txttungay.Text = DateTime.Now.ToString("MM/dd/yyyy");
+            //txtngaychatluong.Text = DateTime.Now.ToString("MM/dd/yyyy");
             //dmbuucuc();
 
             if (!Directory.Exists(@"C:\TempExcel"))

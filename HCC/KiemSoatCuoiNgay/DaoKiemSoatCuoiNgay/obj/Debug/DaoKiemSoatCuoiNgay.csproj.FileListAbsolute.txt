@@ -1,0 +1,4 @@
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\DaoKiemSoatCuoiNgay\bin\Debug\DaoKiemSoatCuoiNgay.dll
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\DaoKiemSoatCuoiNgay\bin\Debug\DaoKiemSoatCuoiNgay.pdb
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\DaoKiemSoatCuoiNgay\obj\Debug\DaoKiemSoatCuoiNgay.dll
+D:\GITHUB\AutoControlAppPC\HCC\KiemSoatCuoiNgay\DaoKiemSoatCuoiNgay\obj\Debug\DaoKiemSoatCuoiNgay.pdb

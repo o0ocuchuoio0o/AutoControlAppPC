@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Threading;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
+using System.Threading.Tasks;
 
 namespace testweb
 {
@@ -25,38 +26,34 @@ namespace testweb
                 PropretiesCollection.driver = new ChromeDriver();
                 PropretiesCollection.driver.Navigate().GoToUrl("http://thongtinphat.vnpost.vn/Security/SignIn");
                 //IJavaScriptExecutor js = (IJavaScriptExecutor)PropretiesCollection.driver;
-                //string title = (string)js.ExecuteScript("document.title = '"+bien+"'");
+                //string title = (string)js.ExecuteScript("document.title = '" + bien + "'");
                 PropretiesCollection.driver.Close();
         }
-
+        private string a;
+        public void RunTask(string s)  {
+            PropretiesCollection.driver = new ChromeDriver();
+            PropretiesCollection.driver.Navigate().GoToUrl("http://thongtinphat.vnpost.vn/Security/SignIn");
+            IJavaScriptExecutor js = (IJavaScriptExecutor)PropretiesCollection.driver;
+            string title = (string)js.ExecuteScript("document.title = '" + a + "'");
+           // PropretiesCollection.driver.Close();
+         
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-
-
-            object look = new object();
-            int k = 0;
-            for (int i = 1; i <= 5; i++)
+            string[] mang = new string[] {"0", "1", "2","3","4","5","6","7","8","9" };
+            for (int i = 0; i < 5;i=i+3)
             {
-                lock (look)
-                {
-                    Thread t1 = new Thread(() =>
-                     {
-                         
-                         for (int j = 1; j <= int.Parse(txtsoluong.Text); j++)
-                         {
-                             k = k + 1;
-                             Thread t = new Thread(() =>
-                             {
-                                 todo(k.ToString());
-                             });
-                             t.Start();                            
-                         }
-                     });
-                    t1.Priority = ThreadPriority.Lowest;
-                    t1.Start();
-                    t1.Join();
+                string[] mangduyet = new string[2];
+                
+                mangduyet[0] = mang[i].ToString();
+                mangduyet[1] = mang[i+1].ToString();               
+                ParallelLoopResult result = Parallel.ForEach(mangduyet, (RunTask) => {
 
-                }
+                    PropretiesCollection.driver = new ChromeDriver();
+                    PropretiesCollection.driver.Navigate().GoToUrl("https://www.google.com/");
+                    IJavaScriptExecutor js = (IJavaScriptExecutor)PropretiesCollection.driver;
+                    string title = (string)js.ExecuteScript("document.title = '" + mangduyet[mangduyet.Length-1].ToString() + "'");
+                });
             }
         }
 
@@ -68,6 +65,13 @@ namespace testweb
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
 
+        }
+
+     
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var text = "Trần Văn Thắng";
+            var base64 = text.EncodeBase64();
         }
     }
 }

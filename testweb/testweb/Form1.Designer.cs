@@ -31,6 +31,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtsoluong = new System.Windows.Forms.DomainUpDown();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -56,11 +57,22 @@
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(340, 259);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(751, 458);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.txtsoluong);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
@@ -74,6 +86,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DomainUpDown txtsoluong;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
