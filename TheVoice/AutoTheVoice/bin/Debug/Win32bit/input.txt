@@ -1,0 +1,7 @@
+file 'D:\_InputFolder\1\image0.jpeg'
+duration 5
+file 'D:\_InputFolder\1\image1.jpeg'
+duration 1
+file 'D:\_InputFolder\1\image2.jpeg'
+duration 3
+file 'D:\_InputFolder\1\image2.jpeg'

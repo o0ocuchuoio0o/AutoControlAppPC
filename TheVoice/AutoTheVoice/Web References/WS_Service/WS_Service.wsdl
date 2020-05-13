@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="DanhSachCanRender">
+        <s:complexType />
+      </s:element>
+      <s:element name="DanhSachCanRenderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DanhSachCanRenderResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDangRender">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IDBaiViet" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDangRenderResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateDaRender">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IDBaiViet" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="linkvoice" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDaRenderResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DanhSachAPI">
+        <s:complexType />
+      </s:element>
+      <s:element name="DanhSachAPIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DanhSachAPIResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DanhSachCanRenderSoapIn">
+    <wsdl:part name="parameters" element="tns:DanhSachCanRender" />
+  </wsdl:message>
+  <wsdl:message name="DanhSachCanRenderSoapOut">
+    <wsdl:part name="parameters" element="tns:DanhSachCanRenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDangRenderSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDangRender" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDangRenderSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDangRenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDaRenderSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDaRender" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDaRenderSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDaRenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="DanhSachAPISoapIn">
+    <wsdl:part name="parameters" element="tns:DanhSachAPI" />
+  </wsdl:message>
+  <wsdl:message name="DanhSachAPISoapOut">
+    <wsdl:part name="parameters" element="tns:DanhSachAPIResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_ServiceSoap">
+    <wsdl:operation name="DanhSachCanRender">
+      <wsdl:input message="tns:DanhSachCanRenderSoapIn" />
+      <wsdl:output message="tns:DanhSachCanRenderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDangRender">
+      <wsdl:input message="tns:UpdateDangRenderSoapIn" />
+      <wsdl:output message="tns:UpdateDangRenderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDaRender">
+      <wsdl:input message="tns:UpdateDaRenderSoapIn" />
+      <wsdl:output message="tns:UpdateDaRenderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DanhSachAPI">
+      <wsdl:input message="tns:DanhSachAPISoapIn" />
+      <wsdl:output message="tns:DanhSachAPISoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_ServiceSoap" type="tns:WS_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DanhSachCanRender">
+      <soap:operation soapAction="http://tempuri.org/DanhSachCanRender" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDangRender">
+      <soap:operation soapAction="http://tempuri.org/UpdateDangRender" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDaRender">
+      <soap:operation soapAction="http://tempuri.org/UpdateDaRender" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DanhSachAPI">
+      <soap:operation soapAction="http://tempuri.org/DanhSachAPI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_ServiceSoap12" type="tns:WS_ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DanhSachCanRender">
+      <soap12:operation soapAction="http://tempuri.org/DanhSachCanRender" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDangRender">
+      <soap12:operation soapAction="http://tempuri.org/UpdateDangRender" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDaRender">
+      <soap12:operation soapAction="http://tempuri.org/UpdateDaRender" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DanhSachAPI">
+      <soap12:operation soapAction="http://tempuri.org/DanhSachAPI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_Service">
+    <wsdl:port name="WS_ServiceSoap" binding="tns:WS_ServiceSoap">
+      <soap:address location="http://buudienhanoi.com.vn/thangbdhn_luu/WS_Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_ServiceSoap12" binding="tns:WS_ServiceSoap12">
+      <soap12:address location="http://buudienhanoi.com.vn/thangbdhn_luu/WS_Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

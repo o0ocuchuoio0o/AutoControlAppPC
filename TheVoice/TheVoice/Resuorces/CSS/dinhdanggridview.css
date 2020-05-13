@@ -1,0 +1,83 @@
+﻿  .grid
+        {
+            font:normal normal normal small normal Arial, Sans-Serif;
+            background-image:url('../Resuorces/images/filter_row_bg') ;
+            background-repeat: repeat;
+           
+        }
+        .grid td, .grid th
+        {
+            padding:5px;
+            
+        }
+        .header
+        {
+            text-align:center;
+            color:Blue;           
+            background-image:url(../Resuorces/images/sort_row_bg.gif) ;
+            background-repeat: repeat;            
+        }
+        .row td
+        {
+           /* border-bottom:solid 1px ;*/
+           
+        }
+        .alternating
+        {
+            background-color:#eeeeee;           
+        }
+        .alternating td
+        {
+          /* border-bottom:solid 1px ;*/
+           
+        }
+        .footer
+        {
+            height:50px;
+            text-align:center;
+            color:Blue;           
+            background-image:url(../Resuorces/images/sort_row_bg.gif) ;
+            background-repeat: repeat;
+        }
+        .button
+   
+        .button
+        {
+            text-align:center;
+            color:Blue;           
+            background-image:url('../Resuorces/images/sort_row_bg.gif') ;
+            background-repeat: repeat;
+            font-size: small;
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+  .pagination
+{
+  line-height: 26px;
+}
+
+.pagination span
+{
+  padding: 5px;
+  border: solid 1px #477B0E;
+  text-decoration: none;
+  white-space: nowrap;
+  background: yellow;
+}
+
+.pagination a, 
+.pagination a:visited
+{
+  text-decoration: none;
+  padding: 6px;
+  white-space: nowrap;
+}
+.pagination a:hover, 
+.pagination a:active
+{
+  padding: 5px;
+  border: solid 1px #9ECDE7;
+  text-decoration: none;
+  white-space: nowrap;
+  background: white;
+}

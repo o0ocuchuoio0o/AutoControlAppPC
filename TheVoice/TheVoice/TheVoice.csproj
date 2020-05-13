@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DADC6F57-534B-46D6-82C2-551F38C1D41B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TheVoice</RootNamespace>
+    <AssemblyName>TheVoice</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ext.Net, Version=2.1.1.17719, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Ext.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net.Utilities, Version=2.1.0.0, Culture=neutral, PublicKeyToken=2c34ac34702a3c23, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Ext.Net.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Transformer.NET, Version=2.1.0.0, Culture=neutral, PublicKeyToken=e274d618e7c603a7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Transformer.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Login.aspx" />
+    <Content Include="NoiDung\DanhSachNoiDung.aspx" />
+    <Content Include="NoiDung\LayNoiDung.aspx" />
+    <Content Include="QuanLy\DanhSachNguoiDung.aspx" />
+    <Content Include="QuanLy\DanhSachRender.aspx" />
+    <Content Include="Resuorces\CSS\dinhdanggridview.css" />
+    <Content Include="Resuorces\CSS\examples.css" />
+    <Content Include="Resuorces\CSS\main.css" />
+    <Content Include="Resuorces\CSS\uploads.css" />
+    <Content Include="Resuorces\FileMauExcel\Excel.xsl" />
+    <Content Include="Resuorces\icons\application.png" />
+    <Content Include="Resuorces\icons\application_double.png" />
+    <Content Include="Resuorces\icons\application_error.png" />
+    <Content Include="Resuorces\icons\application_form.png" />
+    <Content Include="Resuorces\icons\application_go.png" />
+    <Content Include="Resuorces\icons\application_side_expand.png" />
+    <Content Include="Resuorces\icons\application_side_tree.png" />
+    <Content Include="Resuorces\icons\application_view_columns.png" />
+    <Content Include="Resuorces\icons\application_view_detail.png" />
+    <Content Include="Resuorces\icons\application_view_tile.png" />
+    <Content Include="Resuorces\icons\arrow_refresh.png" />
+    <Content Include="Resuorces\icons\arrow_right.png" />
+    <Content Include="Resuorces\icons\asterisk_orange.png" />
+    <Content Include="Resuorces\icons\brick.png" />
+    <Content Include="Resuorces\icons\building_add.png" />
+    <Content Include="Resuorces\icons\building_go.png" />
+    <Content Include="Resuorces\icons\button.png" />
+    <Content Include="Resuorces\icons\buttons.png" />
+    <Content Include="Resuorces\icons\calendar.png" />
+    <Content Include="Resuorces\icons\clock.png" />
+    <Content Include="Resuorces\icons\cog.png" />
+    <Content Include="Resuorces\icons\color_swatch.png" />
+    <Content Include="Resuorces\icons\comments.png" />
+    <Content Include="Resuorces\icons\comment_add.png" />
+    <Content Include="Resuorces\icons\compress.png" />
+    <Content Include="Resuorces\icons\css.png" />
+    <Content Include="Resuorces\icons\cup_black.png" />
+    <Content Include="Resuorces\icons\desktop.png" />
+    <Content Include="Resuorces\icons\editor.png" />
+    <Content Include="Resuorces\icons\email_add.png" />
+    <Content Include="Resuorces\icons\email_attach.png" />
+    <Content Include="Resuorces\icons\email_go.png" />
+    <Content Include="Resuorces\icons\emoticon_smile.png" />
+    <Content Include="Resuorces\icons\hourglass.png" />
+    <Content Include="Resuorces\icons\information.png" />
+    <Content Include="Resuorces\icons\keyboard.png" />
+    <Content Include="Resuorces\icons\layout.png" />
+    <Content Include="Resuorces\icons\lightning.png" />
+    <Content Include="Resuorces\icons\lightning_go.png" />
+    <Content Include="Resuorces\icons\link.png" />
+    <Content Include="Resuorces\icons\money_dollar.png" />
+    <Content Include="Resuorces\icons\page_white_code.png" />
+    <Content Include="Resuorces\icons\page_white_csharp.png" />
+    <Content Include="Resuorces\icons\pencil.png" />
+    <Content Include="Resuorces\icons\plugin.png" />
+    <Content Include="Resuorces\icons\reward.ico" />
+    <Content Include="Resuorces\icons\script.png" />
+    <Content Include="Resuorces\icons\script_code_red.png" />
+    <Content Include="Resuorces\icons\shape_square_select.png" />
+    <Content Include="Resuorces\icons\tab.png" />
+    <Content Include="Resuorces\icons\table_multiple.png" />
+    <Content Include="Resuorces\icons\tabpanel.png" />
+    <Content Include="Resuorces\icons\textfield_rename.png" />
+    <Content Include="Resuorces\icons\toolbar.png" />
+    <Content Include="Resuorces\icons\viewport.png" />
+    <Content Include="Resuorces\icons\wand.png" />
+    <Content Include="Resuorces\icons\wrench.png" />
+    <Content Include="Resuorces\images\404.png" />
+    <Content Include="Resuorces\images\add_user.png" />
+    <Content Include="Resuorces\images\bg.gif" />
+    <Content Include="Resuorces\images\bgnoise.png" />
+    <Content Include="Resuorces\images\black10.png" />
+    <Content Include="Resuorces\images\button-bg-30tall.png" />
+    <Content Include="Resuorces\images\collapse-all.gif" />
+    <Content Include="Resuorces\images\commentlogo.png" />
+    <Content Include="Resuorces\images\coolite.png" />
+    <Content Include="Resuorces\images\ee-ad-bg.png" />
+    <Content Include="Resuorces\images\ee-ad-content.png" />
+    <Content Include="Resuorces\images\ee-ad-store-bg.png" />
+    <Content Include="Resuorces\images\expand-all.gif" />
+    <Content Include="Resuorces\images\ext.net-logo.png" />
+    <Content Include="Resuorces\images\ext_net_badge.gif" />
+    <Content Include="Resuorces\images\ext_net_logo_small.gif" />
+    <Content Include="Resuorces\images\grid-badge-bg.png" />
+    <Content Include="Resuorces\images\grid.png" />
+    <Content Include="Resuorces\images\group-expand-sprite.gif" />
+    <Content Include="Resuorces\images\icon-briefcase.png" />
+    <Content Include="Resuorces\images\item-hd4.gif" />
+    <Content Include="Resuorces\images\layout-browser-hd-bg.gif" />
+    <Content Include="Resuorces\images\loading.gif" />
+    <Content Include="Resuorces\images\loading32.gif" />
+    <Content Include="Resuorces\images\logo.png" />
+    <Content Include="Resuorces\images\logoems.png" />
+    <Content Include="Resuorces\images\new.gif" />
+    <Content Include="Resuorces\images\newgray.gif" />
+    <Content Include="Resuorces\images\noimage.gif" />
+    <Content Include="Resuorces\images\noimage.png" />
+    <Content Include="Resuorces\images\personal.png" />
+    <Content Include="Resuorces\images\sample-over.gif" />
+    <Content Include="Resuorces\images\sort_row_bg.gif" />
+    <Content Include="Resuorces\images\title-background.png" />
+    <Content Include="Resuorces\images\titlebar-badge-bg.png" />
+    <Content Include="Resuorces\images\titlebar-bg.jpg" />
+    <Content Include="Resuorces\images\titlebar-logo-bg.jpg" />
+    <Content Include="Resuorces\images\welcome-bullet.png" />
+    <Content Include="Resuorces\images\welcome-screens.png" />
+    <Content Include="Resuorces\images\xoa.png" />
+    <Content Include="Resuorces\js\main.js" />
+    <Content Include="Resuorces\js\uploads.js" />
+    <Content Include="UpLoadVoice.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WS_Service.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="KetNoi\Cl_KetNoi.cs" />
+    <Compile Include="KetNoi\cl_ReadURL.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NoiDung\DanhSachNoiDung.aspx.cs">
+      <DependentUpon>DanhSachNoiDung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NoiDung\DanhSachNoiDung.aspx.designer.cs">
+      <DependentUpon>DanhSachNoiDung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NoiDung\LayNoiDung.aspx.cs">
+      <DependentUpon>LayNoiDung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NoiDung\LayNoiDung.aspx.designer.cs">
+      <DependentUpon>LayNoiDung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLy\DanhSachNguoiDung.aspx.cs">
+      <DependentUpon>DanhSachNguoiDung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanLy\DanhSachNguoiDung.aspx.designer.cs">
+      <DependentUpon>DanhSachNguoiDung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy\DanhSachRender.aspx.cs">
+      <DependentUpon>DanhSachRender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanLy\DanhSachRender.aspx.designer.cs">
+      <DependentUpon>DanhSachRender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpLoadVoice.aspx.cs">
+      <DependentUpon>UpLoadVoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpLoadVoice.aspx.designer.cs">
+      <DependentUpon>UpLoadVoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WS_Service.asmx.cs">
+      <DependentUpon>WS_Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DaoTheVoice\DaoTheVoice.csproj">
+      <Project>{D712ED66-F46D-45ED-B552-395872BD6BF0}</Project>
+      <Name>DaoTheVoice</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52487</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

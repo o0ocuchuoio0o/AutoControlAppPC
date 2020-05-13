@@ -1,0 +1,4 @@
+D:\GITHUB\AutoControlAppPC\TheVoice\DaoTheVoice\bin\Debug\DaoTheVoice.dll
+D:\GITHUB\AutoControlAppPC\TheVoice\DaoTheVoice\bin\Debug\DaoTheVoice.pdb
+D:\GITHUB\AutoControlAppPC\TheVoice\DaoTheVoice\obj\Debug\DaoTheVoice.dll
+D:\GITHUB\AutoControlAppPC\TheVoice\DaoTheVoice\obj\Debug\DaoTheVoice.pdb

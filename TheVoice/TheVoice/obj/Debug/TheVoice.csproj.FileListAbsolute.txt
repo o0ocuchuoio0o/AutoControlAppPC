@@ -1,0 +1,7 @@
+D:\GITHUB\AutoControlAppPC\TheVoice\TheVoice\bin\TheVoice.dll
+D:\GITHUB\AutoControlAppPC\TheVoice\TheVoice\bin\TheVoice.pdb
+D:\GITHUB\AutoControlAppPC\TheVoice\TheVoice\bin\DaoTheVoice.dll
+D:\GITHUB\AutoControlAppPC\TheVoice\TheVoice\bin\DaoTheVoice.pdb
+D:\GITHUB\AutoControlAppPC\TheVoice\TheVoice\obj\Debug\TheVoice.dll
+D:\GITHUB\AutoControlAppPC\TheVoice\TheVoice\obj\Debug\TheVoice.pdb
+D:\GITHUB\AutoControlAppPC\TheVoice\TheVoice\obj\Debug\TheVoice.csprojResolveAssemblyReference.cache

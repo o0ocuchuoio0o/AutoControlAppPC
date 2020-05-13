@@ -1,0 +1,10 @@
+D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\bin\Debug\DesignUI.exe
+D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\bin\Debug\DesignUI.pdb
+D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\obj\x86\Debug\DesignUI.Form1.resources
+D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\obj\x86\Debug\DesignUI.Properties.Resources.resources
+D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\obj\x86\Debug\DesignUI.csproj.GenerateResource.Cache
+D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\obj\x86\Debug\DesignUI.exe
+D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\obj\x86\Debug\DesignUI.pdb
+D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\obj\x86\Debug\DesignUI.FormSanPham.resources
+D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\obj\x86\Debug\DesignUI.Form2.resources
+D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\obj\x86\Debug\DesignUI.csprojResolveAssemblyReference.cache
