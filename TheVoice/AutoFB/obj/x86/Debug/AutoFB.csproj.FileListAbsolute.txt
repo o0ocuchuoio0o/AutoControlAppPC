@@ -1,0 +1,8 @@
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoFB\obj\x86\Debug\AutoFB.Login.resources
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoFB\obj\x86\Debug\AutoFB.Main.resources
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoFB\obj\x86\Debug\AutoFB.Properties.Resources.resources
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoFB\obj\x86\Debug\AutoFB.csproj.GenerateResource.Cache
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoFB\bin\Debug\AutoFB.exe
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoFB\bin\Debug\AutoFB.pdb
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoFB\obj\x86\Debug\AutoFB.exe
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoFB\obj\x86\Debug\AutoFB.pdb
