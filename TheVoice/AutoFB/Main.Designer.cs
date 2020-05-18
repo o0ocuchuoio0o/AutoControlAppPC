@@ -46,11 +46,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btncauhinhproxy = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnsanpham = new System.Windows.Forms.Button();
+            this.btnchaygialap = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.panelContent = new System.Windows.Forms.Panel();
             this.panelBarTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnmaximi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminima)).BeginInit();
@@ -62,7 +62,7 @@
             // 
             // panelBarTitle
             // 
-            this.panelBarTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+            this.panelBarTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.panelBarTitle.Controls.Add(this.btnmaximi);
             this.panelBarTitle.Controls.Add(this.btnminima);
             this.panelBarTitle.Controls.Add(this.btnres);
@@ -72,17 +72,19 @@
             this.panelBarTitle.Name = "panelBarTitle";
             this.panelBarTitle.Size = new System.Drawing.Size(1284, 30);
             this.panelBarTitle.TabIndex = 1;
+            this.panelBarTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarTitle_MouseDown);
             // 
             // btnmaximi
             // 
             this.btnmaximi.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnmaximi.Image = ((System.Drawing.Image)(resources.GetObject("btnmaximi.Image")));
-            this.btnmaximi.Location = new System.Drawing.Point(1216, 4);
+            this.btnmaximi.Location = new System.Drawing.Point(1216, 3);
             this.btnmaximi.Name = "btnmaximi";
             this.btnmaximi.Size = new System.Drawing.Size(25, 25);
             this.btnmaximi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnmaximi.TabIndex = 3;
             this.btnmaximi.TabStop = false;
+            this.btnmaximi.Click += new System.EventHandler(this.btnmaximi_Click);
             // 
             // btnminima
             // 
@@ -94,6 +96,7 @@
             this.btnminima.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnminima.TabIndex = 2;
             this.btnminima.TabStop = false;
+            this.btnminima.Click += new System.EventHandler(this.btnminima_Click);
             // 
             // btnres
             // 
@@ -105,6 +108,7 @@
             this.btnres.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnres.TabIndex = 1;
             this.btnres.TabStop = false;
+            this.btnres.Click += new System.EventHandler(this.btnres_Click);
             // 
             // btnclose
             // 
@@ -116,6 +120,7 @@
             this.btnclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnclose.TabIndex = 0;
             this.btnclose.TabStop = false;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
             // panelMenu
             // 
@@ -131,9 +136,9 @@
             this.panelMenu.Controls.Add(this.panel3);
             this.panelMenu.Controls.Add(this.button3);
             this.panelMenu.Controls.Add(this.panel2);
-            this.panelMenu.Controls.Add(this.button2);
+            this.panelMenu.Controls.Add(this.btncauhinhproxy);
             this.panelMenu.Controls.Add(this.panel1);
-            this.panelMenu.Controls.Add(this.btnsanpham);
+            this.panelMenu.Controls.Add(this.btnchaygialap);
             this.panelMenu.Controls.Add(this.pictureBox1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 30);
@@ -269,21 +274,21 @@
             this.panel2.Size = new System.Drawing.Size(10, 32);
             this.panel2.TabIndex = 3;
             // 
-            // button2
+            // btncauhinhproxy
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(10, 139);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(205, 32);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Sản phẩm";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btncauhinhproxy.FlatAppearance.BorderSize = 0;
+            this.btncauhinhproxy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btncauhinhproxy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncauhinhproxy.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncauhinhproxy.ForeColor = System.Drawing.Color.White;
+            this.btncauhinhproxy.Image = ((System.Drawing.Image)(resources.GetObject("btncauhinhproxy.Image")));
+            this.btncauhinhproxy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncauhinhproxy.Location = new System.Drawing.Point(10, 139);
+            this.btncauhinhproxy.Name = "btncauhinhproxy";
+            this.btncauhinhproxy.Size = new System.Drawing.Size(205, 32);
+            this.btncauhinhproxy.TabIndex = 2;
+            this.btncauhinhproxy.Text = "Cấu hình proxy";
+            this.btncauhinhproxy.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -293,21 +298,21 @@
             this.panel1.Size = new System.Drawing.Size(10, 32);
             this.panel1.TabIndex = 1;
             // 
-            // btnsanpham
+            // btnchaygialap
             // 
-            this.btnsanpham.FlatAppearance.BorderSize = 0;
-            this.btnsanpham.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnsanpham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsanpham.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsanpham.ForeColor = System.Drawing.Color.White;
-            this.btnsanpham.Image = ((System.Drawing.Image)(resources.GetObject("btnsanpham.Image")));
-            this.btnsanpham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsanpham.Location = new System.Drawing.Point(10, 101);
-            this.btnsanpham.Name = "btnsanpham";
-            this.btnsanpham.Size = new System.Drawing.Size(205, 32);
-            this.btnsanpham.TabIndex = 0;
-            this.btnsanpham.Text = "Sản phẩm";
-            this.btnsanpham.UseVisualStyleBackColor = true;
+            this.btnchaygialap.FlatAppearance.BorderSize = 0;
+            this.btnchaygialap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnchaygialap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnchaygialap.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnchaygialap.ForeColor = System.Drawing.Color.White;
+            this.btnchaygialap.Image = ((System.Drawing.Image)(resources.GetObject("btnchaygialap.Image")));
+            this.btnchaygialap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnchaygialap.Location = new System.Drawing.Point(10, 101);
+            this.btnchaygialap.Name = "btnchaygialap";
+            this.btnchaygialap.Size = new System.Drawing.Size(205, 32);
+            this.btnchaygialap.TabIndex = 0;
+            this.btnchaygialap.Text = "Chạy giả lập";
+            this.btnchaygialap.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -319,12 +324,12 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel8
+            // panelContent
             // 
-            this.panel8.Location = new System.Drawing.Point(226, 30);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1046, 560);
-            this.panel8.TabIndex = 3;
+            this.panelContent.Location = new System.Drawing.Point(221, 30);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(1051, 560);
+            this.panelContent.TabIndex = 3;
             // 
             // Main
             // 
@@ -332,7 +337,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(140)))));
             this.ClientSize = new System.Drawing.Size(1284, 612);
-            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panelContent);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelBarTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -370,11 +375,11 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btncauhinhproxy;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnsanpham;
+        private System.Windows.Forms.Button btnchaygialap;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panelContent;
 
 
     }

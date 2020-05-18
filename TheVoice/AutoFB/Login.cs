@@ -48,7 +48,8 @@ namespace AutoFB
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-
+            Main chay = new Main();
+            chay.Show();
         }
     }
 }
