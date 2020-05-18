@@ -8,3 +8,4 @@ D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\obj\x86\Debug\DesignUI.pdb
 D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\obj\x86\Debug\DesignUI.FormSanPham.resources
 D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\obj\x86\Debug\DesignUI.Form2.resources
 D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\obj\x86\Debug\DesignUI.csprojResolveAssemblyReference.cache
+D:\GITHUB\AutoControlAppPC\DesignUI\DesignUI\obj\x86\Debug\DesignUI.FormLogin.resources

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace DesignUI
+namespace AutoFB
 {
     static class Program
     {
@@ -15,7 +15,7 @@ namespace DesignUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(new Form1());
         }
     }
 }

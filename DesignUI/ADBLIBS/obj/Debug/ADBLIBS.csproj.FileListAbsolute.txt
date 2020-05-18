@@ -1,0 +1,4 @@
+D:\GITHUB\AutoControlAppPC\DesignUI\ADBLIBS\bin\Debug\ADBLIBS.dll
+D:\GITHUB\AutoControlAppPC\DesignUI\ADBLIBS\bin\Debug\ADBLIBS.pdb
+D:\GITHUB\AutoControlAppPC\DesignUI\ADBLIBS\obj\Debug\ADBLIBS.dll
+D:\GITHUB\AutoControlAppPC\DesignUI\ADBLIBS\obj\Debug\ADBLIBS.pdb
