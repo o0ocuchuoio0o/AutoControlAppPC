@@ -101,7 +101,7 @@ namespace AutoFB
         }
 
 
-        private void AbrirFormEnPanel(object formhija)
+        private void _MoFrom(object formhija)
         {
             if (this.panelContent.Controls.Count > 0)
                 this.panelContent.Controls.RemoveAt(0);
@@ -114,10 +114,19 @@ namespace AutoFB
 
         }
 
+       
 
         private void Main_Load(object sender, EventArgs e)
         {
 
+        }
+        private void btnlisttaikhoan_Click(object sender, EventArgs e)
+        {
+            _MoFrom(new QuanLyTaiKhoan());
+        }
+        private void btnchaygialap_Click(object sender, EventArgs e)
+        {
+            _MoFrom(new ChayGiaLap());
         }
 
        

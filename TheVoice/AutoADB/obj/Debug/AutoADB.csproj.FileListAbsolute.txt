@@ -1,0 +1,7 @@
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoADB\bin\Debug\AutoADB.dll
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoADB\bin\Debug\AutoADB.pdb
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoADB\bin\Debug\System.Drawing.dll
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoADB\obj\Debug\AutoADB.csproj.CoreCompileInputs.cache
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoADB\obj\Debug\AutoADB.dll
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoADB\obj\Debug\AutoADB.pdb
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoADB\obj\Debug\AutoADB.csprojResolveAssemblyReference.cache

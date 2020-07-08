@@ -38,12 +38,11 @@ namespace DocCongCOM
 
         private void btn_ghi_Click(object sender, EventArgs e)
         {
-            //CanTrongLuong.CanTrongLuong db = new CanTrongLuong.CanTrongLuong(cbbPort.Text);
-            
-            //double so = db.LayTrongLuong();
-            //txt_so.Text = so.ToString();
-            //rtbTrongLuong.AppendText(so.ToString() + Environment.NewLine);
-            //rtbTrongLuong.ScrollToCaret();
+            CanTrongLuong.CanTrongLuong db = new CanTrongLuong.CanTrongLuong(cbbPort.Text);
+            string so = db.DocTrongLuongV2().ToString();
+            txt_so.Text = so.ToString();
+            rtbTrongLuong.AppendText(so.ToString() + Environment.NewLine);
+            rtbTrongLuong.ScrollToCaret();
 
             //string tem = db.DuLieuGoc();
             //txt_so.Text = tem;
@@ -55,12 +54,12 @@ namespace DocCongCOM
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            CanTrongLuong.CanTrongLuong db = new CanTrongLuong.CanTrongLuong(cbbPort.Text);
-            string temp = db.DocTrongLuong().ToString();
-            //string temp = db.DuLieuGoc();
-            txtSoLieuDaXuLy.Text = temp;
-            rtbTrongLuong.AppendText(temp + Environment.NewLine);
-            rtbTrongLuong.ScrollToCaret();            
+            //CanTrongLuong.CanTrongLuong db = new CanTrongLuong.CanTrongLuong(cbbPort.Text);
+            ////string temp = db.DocTrongLuongTest().ToString();
+            ////string temp = db.DuLieuGoc();
+            //txtSoLieuDaXuLy.Text = temp;
+            //rtbTrongLuong.AppendText(temp + Environment.NewLine);
+            //rtbTrongLuong.ScrollToCaret();            
         }
 
         private void btnExit_Click(object sender, EventArgs e)

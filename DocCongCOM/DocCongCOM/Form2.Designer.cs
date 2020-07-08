@@ -146,7 +146,7 @@
             this.txt_so.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txt_so.Location = new System.Drawing.Point(330, 253);
             this.txt_so.Name = "txt_so";
-            this.txt_so.Size = new System.Drawing.Size(107, 26);
+            this.txt_so.Size = new System.Drawing.Size(274, 26);
             this.txt_so.TabIndex = 31;
             // 
             // txtSoLieuDong2

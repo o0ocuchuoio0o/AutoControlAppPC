@@ -222,7 +222,7 @@ namespace CanTrongLuong
         }
 
 
-        public double LayTrongLuong2()
+        public string LayTrongLuong2()
         {
             // Create a new SerialPort object with default settings.
             SerialPort SerialPort1 = new SerialPort();
@@ -263,7 +263,7 @@ namespace CanTrongLuong
                 catch
                 {
                     SerialPort1.Close();
-                    return 0;
+                    return "0";
                 }
 
 
@@ -280,7 +280,7 @@ namespace CanTrongLuong
                     {
 
                     }
-                    return sove;
+                    return message;
                 }
                 message += temp;
                 t++;
@@ -305,14 +305,14 @@ namespace CanTrongLuong
             {
                 throw ex;
             }
-            return sove2;
+            return message;
         }
 
+     
         public double DocTrongLuong()
         {
             // Create a new SerialPort object with default settings.
             SerialPort SerialPort1 = new SerialPort();
-
             // Allow the user to set the appropriate properties.
             SerialPort1.PortName = this._TenCong;
             SerialPort1.BaudRate = _BaudRate;
@@ -329,7 +329,7 @@ namespace CanTrongLuong
             try
             {
                 SerialPort1.Open();
-                temp = SerialPort1.ReadLine();
+                temp = SerialPort1.ReadLine().ToString();
 
             }
             catch (Exception ex)
@@ -343,5 +343,63 @@ namespace CanTrongLuong
 
             return StringToDouble(temp);
         }
+
+
+        Thread readThread;
+        bool _continue;
+        public double DocTrongLuongV2()
+        {
+            
+            // Create a new SerialPort object with default settings.
+            SerialPort SerialPort1 = new SerialPort();
+            // Allow the user to set the appropriate properties.
+            SerialPort1.PortName = this._TenCong;
+            SerialPort1.BaudRate = _BaudRate;
+            SerialPort1.Parity = _Parity; //SerialPort1.Parity = Parity.None;
+            SerialPort1.DataBits = _DataBits;
+            SerialPort1.StopBits = _StopBits;// SerialPort1.StopBits = StopBits.One;
+            SerialPort1.Handshake = Handshake.None;
+
+            // Set the read/write timeouts
+            //SerialPort1.ReadTimeout = 500;
+            //SerialPort1.WriteTimeout = 500;
+
+            string temp = "";
+            try
+            {
+                SerialPort1.Open();
+                _continue = true;
+                string message = "";
+                while (_continue)
+                    {
+                        try
+                        {
+                            message = message + " " + SerialPort1.ReadExisting();                           
+                            if (message.IndexOf("kg") != -1)
+                            {
+                                _continue = false;
+                            }
+                        }
+                        catch (TimeoutException) { }
+                    }
+               
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                SerialPort1.Close();
+            }
+
+            return StringToDouble(temp);
+        }
+
+        
+
+          
+        
     }
 }

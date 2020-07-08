@@ -5,3 +5,5 @@ D:\GITHUB\AutoControlAppPC\TheVoice\TheVoice\bin\DaoTheVoice.pdb
 D:\GITHUB\AutoControlAppPC\TheVoice\TheVoice\obj\Debug\TheVoice.dll
 D:\GITHUB\AutoControlAppPC\TheVoice\TheVoice\obj\Debug\TheVoice.pdb
 D:\GITHUB\AutoControlAppPC\TheVoice\TheVoice\obj\Debug\TheVoice.csprojResolveAssemblyReference.cache
+D:\GITHUB\AutoControlAppPC\TheVoice\TheVoice\bin\TheVoice.dll.config
+D:\GITHUB\AutoControlAppPC\TheVoice\TheVoice\obj\Debug\TheVoice.csproj.CoreCompileInputs.cache

@@ -11,3 +11,4 @@ D:\GITHUB\AutoControlAppPC\TheVoice\AutoTheVoice\obj\x86\Debug\AutoTheVoice.Form
 D:\GITHUB\AutoControlAppPC\TheVoice\AutoTheVoice\obj\x86\Debug\AutoTheVoice.FormMain.resources
 D:\GITHUB\AutoControlAppPC\TheVoice\AutoTheVoice\bin\Debug\AutoTheVoice.exe.config
 D:\GITHUB\AutoControlAppPC\TheVoice\AutoTheVoice\bin\Debug\System.Configuration.dll
+D:\GITHUB\AutoControlAppPC\TheVoice\AutoTheVoice\obj\x86\Debug\AutoTheVoice.csproj.CoreCompileInputs.cache

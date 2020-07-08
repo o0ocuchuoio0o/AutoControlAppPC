@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO.Ports;
 using System.Threading;
+using System.Text.RegularExpressions;
 
 namespace DocCongCOM
 {
@@ -20,6 +21,7 @@ namespace DocCongCOM
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            CheckForIllegalCrossThreadCalls = false;
             foreach (string cong in SerialPort.GetPortNames())
             {
                 cbbPorts.Items.Add(cong);
@@ -32,6 +34,7 @@ namespace DocCongCOM
 
         private void btnCon_Click(object sender, EventArgs e)
         {
+            txtRec.Text = "0";
             readThread = new Thread(Read);
 
             // Create a new SerialPort object with default settings.
@@ -46,8 +49,8 @@ namespace DocCongCOM
             SerialPort1.Handshake = Handshake.None;
 
             // Set the read/write timeouts
-            //_serialPort.ReadTimeout = 500;
-            //_serialPort.WriteTimeout = 500;
+            SerialPort1.ReadTimeout = 500;
+            SerialPort1.WriteTimeout = 500;
 
             //if (!SerialPort1.IsOpen)
                 SerialPort1.Open(); //SerialPort1.Close();
@@ -56,22 +59,55 @@ namespace DocCongCOM
             readThread.Start();
                         
         }
+        public double StringToDouble(string input)
+        {
 
+            string kq = "";
+            string[] numbers = Regex.Split(input, @"\D+");
+
+            foreach (string value in numbers)
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    if (kq != "")
+                    {
+                        kq = kq + "." + value.ToString();
+                    }
+                    else
+                    {
+                        kq = kq + value.ToString();
+                    }
+                }
+            }
+            return double.Parse(kq.ToString());
+        }
         public void Read()
         {
-            
+            string message = "";
             while (_continue)
             {
                 try
                 {
-                    string message = SerialPort1.ReadExisting();
-                    if (txtRec.InvokeRequired)
+                    message =message+ SerialPort1.ReadExisting();
+                    if (message != "")
                     {
-                        txtRec.Invoke(new MethodInvoker(delegate { txtRec.AppendText(message); }));
-                    }
+                       
+                          
+                            if (message.IndexOf("kg") != -1)
+                            {
+                                int w = message.IndexOf("Weight");
+                                int k = message.IndexOf("kg");
+                                int l = k - (w+8);
+                                txtRec.Text =StringToDouble(message.Substring(w+8,l)).ToString();
+                                SerialPort1.Close();
+                                readThread.Abort();
+                               
+                            }
 
+                        
+                    }
                  }
-                catch (TimeoutException) { }
+                catch (TimeoutException) { txtRec.Text ="0"; }
             }
         }
 

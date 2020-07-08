@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaoTheVoice", "DaoTheVoice\DaoTheVoice.csproj", "{D712ED66-F46D-45ED-B552-395872BD6BF0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTheVoice", "AutoTheVoice\AutoTheVoice.csproj", "{EEC5F731-230D-4899-B33B-CB1A7F6554E6}"
@@ -8,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheVoice", "TheVoice\TheVoice.csproj", "{DADC6F57-534B-46D6-82C2-551F38C1D41B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFB", "AutoFB\AutoFB.csproj", "{214D3F31-8E8F-430F-AA88-15E266EFFE2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoADB", "AutoADB\AutoADB.csproj", "{8088A343-BC3E-44E8-9CC3-79ED63D99B9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,8 +63,23 @@ Global
 		{214D3F31-8E8F-430F-AA88-15E266EFFE2D}.Release|Mixed Platforms.Build.0 = Release|x86
 		{214D3F31-8E8F-430F-AA88-15E266EFFE2D}.Release|x86.ActiveCfg = Release|x86
 		{214D3F31-8E8F-430F-AA88-15E266EFFE2D}.Release|x86.Build.0 = Release|x86
+		{8088A343-BC3E-44E8-9CC3-79ED63D99B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8088A343-BC3E-44E8-9CC3-79ED63D99B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8088A343-BC3E-44E8-9CC3-79ED63D99B9A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8088A343-BC3E-44E8-9CC3-79ED63D99B9A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8088A343-BC3E-44E8-9CC3-79ED63D99B9A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8088A343-BC3E-44E8-9CC3-79ED63D99B9A}.Debug|x86.Build.0 = Debug|Any CPU
+		{8088A343-BC3E-44E8-9CC3-79ED63D99B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8088A343-BC3E-44E8-9CC3-79ED63D99B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8088A343-BC3E-44E8-9CC3-79ED63D99B9A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8088A343-BC3E-44E8-9CC3-79ED63D99B9A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8088A343-BC3E-44E8-9CC3-79ED63D99B9A}.Release|x86.ActiveCfg = Release|Any CPU
+		{8088A343-BC3E-44E8-9CC3-79ED63D99B9A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF568A4B-3FFB-46D5-B4BA-16476EBA6663}
 	EndGlobalSection
 EndGlobal

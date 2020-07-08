@@ -35,16 +35,14 @@
             this.btnres = new System.Windows.Forms.PictureBox();
             this.btnclose = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnlisttaikhoan = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btndanhmucsanpham = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btntoollocuid = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnscriptmacro = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btncauhinhproxy = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -124,17 +122,15 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.panelMenu.Controls.Add(this.panel7);
-            this.panelMenu.Controls.Add(this.button7);
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
             this.panelMenu.Controls.Add(this.panel6);
-            this.panelMenu.Controls.Add(this.button6);
+            this.panelMenu.Controls.Add(this.btnlisttaikhoan);
             this.panelMenu.Controls.Add(this.panel5);
-            this.panelMenu.Controls.Add(this.button5);
+            this.panelMenu.Controls.Add(this.btndanhmucsanpham);
             this.panelMenu.Controls.Add(this.panel4);
-            this.panelMenu.Controls.Add(this.button4);
+            this.panelMenu.Controls.Add(this.btntoollocuid);
             this.panelMenu.Controls.Add(this.panel3);
-            this.panelMenu.Controls.Add(this.button3);
+            this.panelMenu.Controls.Add(this.btnscriptmacro);
             this.panelMenu.Controls.Add(this.panel2);
             this.panelMenu.Controls.Add(this.btncauhinhproxy);
             this.panelMenu.Controls.Add(this.panel1);
@@ -146,30 +142,6 @@
             this.panelMenu.Size = new System.Drawing.Size(220, 582);
             this.panelMenu.TabIndex = 2;
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel7.Location = new System.Drawing.Point(0, 329);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(10, 32);
-            this.panel7.TabIndex = 3;
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(10, 329);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(205, 32);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Sản phẩm";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
@@ -178,21 +150,22 @@
             this.panel6.Size = new System.Drawing.Size(10, 32);
             this.panel6.TabIndex = 3;
             // 
-            // button6
+            // btnlisttaikhoan
             // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(10, 291);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(205, 32);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Sản phẩm";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnlisttaikhoan.FlatAppearance.BorderSize = 0;
+            this.btnlisttaikhoan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnlisttaikhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlisttaikhoan.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlisttaikhoan.ForeColor = System.Drawing.Color.White;
+            this.btnlisttaikhoan.Image = ((System.Drawing.Image)(resources.GetObject("btnlisttaikhoan.Image")));
+            this.btnlisttaikhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnlisttaikhoan.Location = new System.Drawing.Point(10, 291);
+            this.btnlisttaikhoan.Name = "btnlisttaikhoan";
+            this.btnlisttaikhoan.Size = new System.Drawing.Size(205, 32);
+            this.btnlisttaikhoan.TabIndex = 2;
+            this.btnlisttaikhoan.Text = "List tài khoản";
+            this.btnlisttaikhoan.UseVisualStyleBackColor = true;
+            this.btnlisttaikhoan.Click += new System.EventHandler(this.btnlisttaikhoan_Click);
             // 
             // panel5
             // 
@@ -202,21 +175,21 @@
             this.panel5.Size = new System.Drawing.Size(10, 32);
             this.panel5.TabIndex = 3;
             // 
-            // button5
+            // btndanhmucsanpham
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(10, 253);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(205, 32);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Sản phẩm";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btndanhmucsanpham.FlatAppearance.BorderSize = 0;
+            this.btndanhmucsanpham.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btndanhmucsanpham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndanhmucsanpham.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndanhmucsanpham.ForeColor = System.Drawing.Color.White;
+            this.btndanhmucsanpham.Image = ((System.Drawing.Image)(resources.GetObject("btndanhmucsanpham.Image")));
+            this.btndanhmucsanpham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndanhmucsanpham.Location = new System.Drawing.Point(10, 253);
+            this.btndanhmucsanpham.Name = "btndanhmucsanpham";
+            this.btndanhmucsanpham.Size = new System.Drawing.Size(205, 32);
+            this.btndanhmucsanpham.TabIndex = 2;
+            this.btndanhmucsanpham.Text = "DM sản phẩm bán";
+            this.btndanhmucsanpham.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
@@ -226,21 +199,21 @@
             this.panel4.Size = new System.Drawing.Size(10, 32);
             this.panel4.TabIndex = 3;
             // 
-            // button4
+            // btntoollocuid
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(10, 215);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(205, 32);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Sản phẩm";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btntoollocuid.FlatAppearance.BorderSize = 0;
+            this.btntoollocuid.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btntoollocuid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btntoollocuid.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntoollocuid.ForeColor = System.Drawing.Color.White;
+            this.btntoollocuid.Image = ((System.Drawing.Image)(resources.GetObject("btntoollocuid.Image")));
+            this.btntoollocuid.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btntoollocuid.Location = new System.Drawing.Point(10, 215);
+            this.btntoollocuid.Name = "btntoollocuid";
+            this.btntoollocuid.Size = new System.Drawing.Size(205, 32);
+            this.btntoollocuid.TabIndex = 2;
+            this.btntoollocuid.Text = "Tool lọc UID";
+            this.btntoollocuid.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -250,21 +223,21 @@
             this.panel3.Size = new System.Drawing.Size(10, 32);
             this.panel3.TabIndex = 3;
             // 
-            // button3
+            // btnscriptmacro
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(10, 177);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(205, 32);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Sản phẩm";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnscriptmacro.FlatAppearance.BorderSize = 0;
+            this.btnscriptmacro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnscriptmacro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnscriptmacro.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnscriptmacro.ForeColor = System.Drawing.Color.White;
+            this.btnscriptmacro.Image = ((System.Drawing.Image)(resources.GetObject("btnscriptmacro.Image")));
+            this.btnscriptmacro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnscriptmacro.Location = new System.Drawing.Point(10, 177);
+            this.btnscriptmacro.Name = "btnscriptmacro";
+            this.btnscriptmacro.Size = new System.Drawing.Size(205, 32);
+            this.btnscriptmacro.TabIndex = 2;
+            this.btnscriptmacro.Text = "Script macro";
+            this.btnscriptmacro.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -313,6 +286,7 @@
             this.btnchaygialap.TabIndex = 0;
             this.btnchaygialap.Text = "Chạy giả lập";
             this.btnchaygialap.UseVisualStyleBackColor = true;
+            this.btnchaygialap.Click += new System.EventHandler(this.btnchaygialap_Click);
             // 
             // pictureBox1
             // 
@@ -364,16 +338,14 @@
         private System.Windows.Forms.PictureBox btnres;
         private System.Windows.Forms.PictureBox btnclose;
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnlisttaikhoan;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btndanhmucsanpham;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btntoollocuid;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnscriptmacro;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btncauhinhproxy;
         private System.Windows.Forms.Panel panel1;

@@ -1,0 +1,8 @@
+D:\GITHUB\AutoControlAppPC\StyleTempleProshow\StyleTempleProshow\bin\Debug\StyleTempleProshow.exe
+D:\GITHUB\AutoControlAppPC\StyleTempleProshow\StyleTempleProshow\bin\Debug\StyleTempleProshow.pdb
+D:\GITHUB\AutoControlAppPC\StyleTempleProshow\StyleTempleProshow\obj\x86\Debug\StyleTempleProshow.FormMain.resources
+D:\GITHUB\AutoControlAppPC\StyleTempleProshow\StyleTempleProshow\obj\x86\Debug\StyleTempleProshow.Properties.Resources.resources
+D:\GITHUB\AutoControlAppPC\StyleTempleProshow\StyleTempleProshow\obj\x86\Debug\StyleTempleProshow.csproj.GenerateResource.Cache
+D:\GITHUB\AutoControlAppPC\StyleTempleProshow\StyleTempleProshow\obj\x86\Debug\StyleTempleProshow.exe
+D:\GITHUB\AutoControlAppPC\StyleTempleProshow\StyleTempleProshow\obj\x86\Debug\StyleTempleProshow.pdb
+D:\GITHUB\AutoControlAppPC\StyleTempleProshow\StyleTempleProshow\obj\x86\Debug\StyleTempleProshow.csprojResolveAssemblyReference.cache
