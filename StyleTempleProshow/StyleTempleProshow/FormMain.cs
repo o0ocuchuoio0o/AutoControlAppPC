@@ -206,7 +206,29 @@ namespace StyleTempleProshow
 
         private void btntaopsh_Click(object sender, EventArgs e)
         {
+            DataTable slidepsproshow = new DataTable();
+            slidepsproshow.Columns.Add("PathMC", typeof(string));
+            slidepsproshow.Columns.Add("PathSub", typeof(string));
+            slidepsproshow.Columns.Add("PathImage", typeof(string));
+            slidepsproshow.Columns.Add("TimeSlide", typeof(string));
+            slidepsproshow.Columns.Add("PathVoice", typeof(string));
+            slidepsproshow.Columns.Add("TimeVoice", typeof(string));
+          
+                string _PathMC = "";
+                string _PathSub =txtsub.Text;
+                string _PathImage = txtanh.Text;
+                string _TimeSlide ="5000";
+                string _PathVoice = txtvoice.Text;
+                string _TimeVoice = "5000";               
+                slidepsproshow.Rows.Add(_PathMC, _PathSub, _PathImage, _TimeSlide, _PathVoice, _TimeVoice);
+                slidepsproshow.Rows.Add(_PathMC, _PathSub, _PathImage, _TimeSlide, _PathVoice, _TimeVoice);
 
+                proshowserver creatvideo = new proshowserver();
+                string filePsh;
+                filePsh = creatvideo._CreatePSH(int.Parse(cmbstyle.Text),"1",
+                                                   txtintro.Text,"8000",
+                                                   txtouttro.Text, "5000",
+                                                   @"D:\", txtmusicbg.Text, slidepsproshow, txtvideobg.Text);
         }
 
     }

@@ -6,3 +6,4 @@ D:\GITHUB\AutoControlAppPC\StyleTempleProshow\StyleTempleProshow\obj\x86\Debug\S
 D:\GITHUB\AutoControlAppPC\StyleTempleProshow\StyleTempleProshow\obj\x86\Debug\StyleTempleProshow.exe
 D:\GITHUB\AutoControlAppPC\StyleTempleProshow\StyleTempleProshow\obj\x86\Debug\StyleTempleProshow.pdb
 D:\GITHUB\AutoControlAppPC\StyleTempleProshow\StyleTempleProshow\obj\x86\Debug\StyleTempleProshow.csprojResolveAssemblyReference.cache
+D:\GITHUB\AutoControlAppPC\StyleTempleProshow\StyleTempleProshow\bin\Debug\StyleTempleProshow.exe.config

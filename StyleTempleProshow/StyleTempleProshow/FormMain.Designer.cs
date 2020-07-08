@@ -52,6 +52,8 @@
             this.btntaopsh = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtmusicbg = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtsub = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ListDuLieu)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -155,6 +157,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.txtsub);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.txtmusicbg);
             this.tabPage2.Controls.Add(this.btntaopsh);
@@ -288,6 +292,23 @@
             this.txtmusicbg.TabIndex = 11;
             this.txtmusicbg.Text = "D:\\video\\bg.mp3";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(107, 335);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 13);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "ảnh sub";
+            // 
+            // txtsub
+            // 
+            this.txtsub.Location = new System.Drawing.Point(174, 332);
+            this.txtsub.Name = "txtsub";
+            this.txtsub.Size = new System.Drawing.Size(411, 20);
+            this.txtsub.TabIndex = 13;
+            this.txtsub.Text = "D:\\video\\1ps.PNG";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,5 +361,7 @@
         private System.Windows.Forms.Button btntaopsh;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtmusicbg;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtsub;
     }
 }
