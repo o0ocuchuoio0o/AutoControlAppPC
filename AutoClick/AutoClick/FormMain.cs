@@ -123,5 +123,419 @@ namespace AutoClick
 
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ChromePerformanceLoggingPreferences perfLogPrefs = new ChromePerformanceLoggingPreferences();
+            perfLogPrefs.AddTracingCategories(new string[] { "devtools.timeline" });
+            ChromeOptions options = new ChromeOptions();
+            options.AddArguments("--disable-notifications");
+            options.AddArgument("--window-size=1500,900");
+            options.AddArgument("--disable-infobars");
+            options.PerformanceLoggingPreferences = perfLogPrefs;
+            options.SetLoggingPreference(LogType.Driver, LogLevel.All);
+            options.SetLoggingPreference("performance", LogLevel.All);
+            options.AddAdditionalCapability(CapabilityType.EnableProfiling, true, true);
+            PropretiesCollection.driver = new ChromeDriver(options);
+            PropretiesCollection.driver.Navigate().GoToUrl("http://10.1.45.26:8081/");
+        }
+        [FindsBy(How = How.XPath, Using = "/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[2]/button[3]")]
+        public IWebElement next;
+        [FindsBy(How = How.XPath, Using = "/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[2]/button[4]")]
+        public IWebElement hoanthanh;
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+             Thread t = new Thread(() =>
+             {
+
+                 for (int lap = 1; lap <= int.Parse(txtlapduyet.Value.ToString()); lap++)
+                 {
+                     try
+                     {
+                         int bienkiemtra = 0;
+                         switch (bienkiemtra)
+                         {
+                             case 0:             // label case 1
+                                 System.Threading.Thread.Sleep(2500);
+                                 goto case 1;
+                                 break;  
+                             case 1:
+                                 try
+                                 {
+                                     try
+                                     {
+                                         PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[2]/button[3]")).Click();
+                                     }
+                                     catch
+                                     {
+                                         try {
+                                             PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div/div/div/div/div[2]/div[2]/button[3]")).Click();
+                                       
+                                         }
+                                         catch { goto case 0; }                                         
+                                     }
+                                     int kiemtrachu = 1;
+                                     for (int i = 1; i <= 3; i++)
+                                     {
+                                         try
+                                         {
+                                             PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[2]/button[3]")).Click();
+                                         }
+                                         catch { }
+                                         try
+                                         {
+                                             PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div/div/div/div/div[2]/div[2]/button[3]")).Click();
+
+                                         }
+                                         catch {  }      
+                                         Thread.Sleep(1500);
+                                         if (kiemtrachu == 2)
+                                         {
+                                             IJavaScriptExecutor js = (IJavaScriptExecutor)PropretiesCollection.driver;
+                                             js.ExecuteScript("window.scrollBy(0,250)", "");
+                                             Thread.Sleep(4000);
+                                             try
+                                             {
+                                                 PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[1]/div[21]/div[3]/input[2]")).Clear();
+                                                
+                                                 //PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.ClassName("form-control control-textarea")).Clear();
+                                             }
+                                             catch { }
+                                             Thread.Sleep(1000);
+                                             try
+                                             {
+                                                 PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div/div/div/div/div[2]/div[1]/div[21]/div[3]/input[2]")).Clear();
+                                                
+                                                 //PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.ClassName("form-control control-textarea")).Clear();
+                                             }
+                                             catch { }
+                                           
+                                            
+                                            
+                                             Thread.Sleep(1000);
+                                             try
+                                             {
+                                                 PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[1]/div[21]/div[3]/input[3]")).Clear();
+                                                 //PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.ClassName("form-control control-textarea autocompleteWardSearch    inited ui-autocomplete-input")).Clear();
+                                             }
+                                             catch { }
+                                             try
+                                             {
+                                                 PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div/div/div/div/div[2]/div[1]/div[21]/div[3]/input[3]")).Clear();
+                                                 //PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.ClassName("form-control control-textarea autocompleteWardSearch    inited ui-autocomplete-input")).Clear();
+                                             }
+                                             catch { }
+                                             Thread.Sleep(2000);
+                                         }
+                                         else if (kiemtrachu == 3)
+                                         { 
+                                              try
+                                             {
+                                                 PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[1]/div[25]/div[3]/input[2]")).Clear();
+                                                      }
+                                             catch { }
+                                             Thread.Sleep(1000);
+                                              try
+                                             {
+                                                 PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div/div/div/div/div[2]/div[1]/div[25]/div[3]/input[2]")).Clear();
+                                               
+                                                  // PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.ClassName("form-control control-textarea    ")).Clear();
+                                              }
+                                             catch { }
+                                              Thread.Sleep(1000);
+                                             try
+                                             {
+                                                 PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[1]/div[26]/div[3]/input[2]")).Clear();
+                                                // PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.ClassName("form-control control-textarea    ")).Clear();
+                                             }
+                                             catch { }
+                                             Thread.Sleep(1000);
+                                             try
+                                             {
+                                                 PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div/div/div/div/div[2]/div[1]/div[26]/div[3]/input[2]")).Clear();
+                                                 // PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.ClassName("form-control control-textarea    ")).Clear();
+                                             }
+                                             catch { }
+                                             Thread.Sleep(1000);
+                                             try
+                                             {
+                                                 PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[1]/div[27]/div[3]/input[2]")).Clear();
+                                             }
+                                             catch { }
+                                             Thread.Sleep(1000);
+                                             try
+                                             {
+                                                 PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div/div/div/div/div[2]/div[1]/div[27]/div[3]/input[2]")).Clear();
+                                             }
+                                             catch { }
+                                             Thread.Sleep(2000);
+                                         }
+                                         kiemtrachu = kiemtrachu + 1;
+                                     }
+                                    
+                                     try
+                                     {
+                                         PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[2]/button[4]")).Click();
+                                     }
+                                     catch { }
+                                     try
+                                     {
+                                         PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div/div/div/div/div[2]/div[2]/button[4]")).Click();
+                                     }
+                                     catch { }
+                                 }
+                                 catch {
+                                     goto case 0;
+                                 }
+                                 break;                            
+                         }
+
+                       
+                          }
+                     catch {  }
+                  }
+             });
+             t.IsBackground = false;
+             t.Start();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Thread t = new Thread(() =>
+            {
+
+                for (int lap = 1; lap <= int.Parse(txtlapduyet.Value.ToString()); lap++)
+                {
+                    try
+                    {
+                        int bienkiemtra = 0;
+                        switch (bienkiemtra)
+                        {
+                            case 0:             // label case 1
+                                System.Threading.Thread.Sleep(2500);
+                                goto case 1;
+                                break;
+                            case 1:
+                                try
+                                {
+                                    try
+                                    {
+                                        PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[2]/button[3]")).Click();
+                                    }
+                                    catch
+                                    {
+                                        try
+                                        {
+                                            PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div/div/div/div/div[2]/div[2]/button[3]")).Click();
+
+                                        }
+                                        catch {
+                                            goto case 0;
+                                        }
+                                    }
+
+                                    for (int i = 1; i <= 2; i++)
+                                    {
+                                        try
+                                        {
+                                            PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[2]/button[3]")).Click();
+                                        }
+                                        catch { }
+                                        try
+                                        {
+                                            PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div/div/div/div/div[2]/div[2]/button[3]")).Click();
+
+                                        }
+                                        catch { }
+                                        Thread.Sleep(1500);
+                                    }
+                                    try
+                                    {
+                                        PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[2]/button[4]")).Click();
+                                    }
+                                    catch { }
+                                    try
+                                    {
+                                        PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div/div/div/div/div[2]/div[2]/button[4]")).Click();
+                                    }
+                                    catch { }
+                                }
+                                catch
+                                {
+                                    goto case 0;
+                                }
+                                break;
+                        }
+
+
+                    }
+                    catch { }
+                }
+            });
+            t.IsBackground = false;
+            t.Start();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Thread t = new Thread(() =>
+            {
+
+                for (int lap = 1; lap <= int.Parse(txtlapduyet.Value.ToString()); lap++)
+                {
+                    try
+                    {
+                        int bienkiemtra = 0;
+                        switch (bienkiemtra)
+                        {
+                            case 0:             // label case 1
+                                System.Threading.Thread.Sleep(2500);
+                                goto case 1;
+                                break;
+                            case 1:
+                                try
+                                {                                   
+                                   
+                                    try
+                                    {
+                                        PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[2]/button[4]")).Click();
+                                    }
+                                    catch {
+                                        try
+                                        {
+                                            PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div/div/div/div/div[2]/div[2]/button[4]")).Click();
+                                        }
+                                        catch { goto case 0; }
+                                    }
+                                    
+                                }
+                                catch
+                                {
+                                   
+                                }
+                                break;
+                        }
+
+
+                    }
+                    catch { }
+                }
+            });
+            t.IsBackground = false;
+            t.Start();
+        }
+
+
+        #region // test final
+        [FindsBy(How = How.XPath, Using = "/html/body/div[2]/div/div/div[2]/div[1]/div/div[2]/div[2]/div[1]/form/div/div[10]/div/input")]
+        public IWebElement ngaysinhct;
+      
+      
+        public static string GetText(IWebElement element)
+        {
+            return element.GetAttribute("value");
+        }
+
+        
+        private void btncheckfinal_Click(object sender, EventArgs e)
+        {
+            
+            Thread t = new Thread(() =>
+            {
+              
+                for (int lap = 1; lap <= int.Parse(txtlapduyet.Value.ToString()); lap++)
+                {
+                    try
+                    {
+                        Thread.Sleep(3000);
+                        for (int i = 1; i <= 26; i++)
+                        {
+                            Thread.Sleep(700);
+                            System.Windows.Forms.SendKeys.SendWait("{TAB}");
+                            if (i == 4 || i == 3)
+                            {
+                                txtngaysinh.Text = "";
+                                Thread.Sleep(1000);
+                                SendKeys.SendWait("^c");
+                                Thread.Sleep(2000);
+                                //this.Invoke(new Action(() =>
+                                //{
+                                //    txtngaysinh.Paste();
+                                //}));
+                                 txtngaysinh.Paste();
+                                Thread.Sleep(4000);
+                                string ngaysinh = txtngaysinh.Text;
+                                Thread.Sleep(1000);
+                                txtngaysinh.Text = "";
+                                if (ngaysinh.IndexOf("01/01") != -1)
+                                {
+                                    string temp = ngaysinh.Replace("01/01/", "");
+                                    try
+                                    {
+                                      
+                                        PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div[1]/div/div[2]/div[2]/div[1]/form/div/div[10]/div/input")).SendKeys(temp);
+                                       
+                                    }
+                                    catch { }
+                                    try
+                                    {
+                                       
+                                        PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div[1]/div/div[2]/div[2]/div[1]/form/div/div[10]/div/input")).SendKeys(temp);
+                                       
+                                    }
+                                    catch { }
+                                    
+                                   
+                                }
+                            }
+                            if (i == 6)
+                            { Thread.Sleep(6000); }
+                        }
+                        #region // click xong
+                        IJavaScriptExecutor js = (IJavaScriptExecutor)PropretiesCollection.driver;
+                        js.ExecuteScript("window.scrollBy(0,450)", "");
+                        int bienkiemtra = 0;
+                        switch (bienkiemtra)
+                        {
+                            case 0:             // label case 1
+                                System.Threading.Thread.Sleep(2500);
+                                goto case 1;
+                                break;
+                            case 1:
+                                try
+                                {
+                                    try
+                                    {
+                                        PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div[1]/div/div[2]/div[2]/div[1]/form/div/div[29]/div/button")).Click();
+                                    }
+                                    catch
+                                    {
+                                        try
+                                        {
+                                            PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div[1]/div/div[2]/div[2]/div[1]/form/div/div[29]/div/button")).Click();
+
+                                        }
+                                        catch
+                                        {
+                                            try { System.Windows.Forms.SendKeys.SendWait("^{ENTER}"); }
+                                            catch { goto case 0; }
+                                        }
+                                    }
+
+                                }
+                                catch { goto case 0; }
+                                break;
+                        }
+                        #endregion
+                    }                    
+                    catch {
+                    }
+                }
+            });
+            t.IsBackground = true;
+            t.Start();
+        }
+        #endregion
     }
 }

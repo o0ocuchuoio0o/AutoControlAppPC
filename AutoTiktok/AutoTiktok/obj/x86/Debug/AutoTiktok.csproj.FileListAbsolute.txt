@@ -1,0 +1,8 @@
+D:\GITHUB\AutoControlAppPC\AutoTiktok\AutoTiktok\bin\Debug\AutoTiktok.exe
+D:\GITHUB\AutoControlAppPC\AutoTiktok\AutoTiktok\bin\Debug\AutoTiktok.pdb
+D:\GITHUB\AutoControlAppPC\AutoTiktok\AutoTiktok\obj\x86\Debug\AutoTiktok.csprojResolveAssemblyReference.cache
+D:\GITHUB\AutoControlAppPC\AutoTiktok\AutoTiktok\obj\x86\Debug\AutoTiktok.Form1.resources
+D:\GITHUB\AutoControlAppPC\AutoTiktok\AutoTiktok\obj\x86\Debug\AutoTiktok.Properties.Resources.resources
+D:\GITHUB\AutoControlAppPC\AutoTiktok\AutoTiktok\obj\x86\Debug\AutoTiktok.csproj.GenerateResource.Cache
+D:\GITHUB\AutoControlAppPC\AutoTiktok\AutoTiktok\obj\x86\Debug\AutoTiktok.exe
+D:\GITHUB\AutoControlAppPC\AutoTiktok\AutoTiktok\obj\x86\Debug\AutoTiktok.pdb

@@ -1,8 +1,7 @@
+D:\GITHUB\AutoControlAppPC\AutoClick\AutoClick\bin\Debug\AutoClick.exe
+D:\GITHUB\AutoControlAppPC\AutoClick\AutoClick\bin\Debug\AutoClick.pdb
 D:\GITHUB\AutoControlAppPC\AutoClick\AutoClick\obj\x86\Debug\AutoClick.FormMain.resources
 D:\GITHUB\AutoControlAppPC\AutoClick\AutoClick\obj\x86\Debug\AutoClick.Properties.Resources.resources
 D:\GITHUB\AutoControlAppPC\AutoClick\AutoClick\obj\x86\Debug\AutoClick.csproj.GenerateResource.Cache
-D:\GITHUB\AutoControlAppPC\AutoClick\AutoClick\bin\Debug\AutoClick.exe
-D:\GITHUB\AutoControlAppPC\AutoClick\AutoClick\bin\Debug\AutoClick.pdb
 D:\GITHUB\AutoControlAppPC\AutoClick\AutoClick\obj\x86\Debug\AutoClick.exe
 D:\GITHUB\AutoControlAppPC\AutoClick\AutoClick\obj\x86\Debug\AutoClick.pdb
-D:\GITHUB\AutoControlAppPC\AutoClick\AutoClick\obj\x86\Debug\AutoClick.csprojResolveAssemblyReference.cache
