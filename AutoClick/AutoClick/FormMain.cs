@@ -137,7 +137,7 @@ namespace AutoClick
             options.SetLoggingPreference("performance", LogLevel.All);
             options.AddAdditionalCapability(CapabilityType.EnableProfiling, true, true);
             PropretiesCollection.driver = new ChromeDriver(options);
-            PropretiesCollection.driver.Navigate().GoToUrl("http://10.1.45.26:8081/");
+            PropretiesCollection.driver.Navigate().GoToUrl("http://10.1.45.26:8083/");
         }
         [FindsBy(How = How.XPath, Using = "/html/body/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[2]/button[3]")]
         public IWebElement next;
@@ -449,14 +449,14 @@ namespace AutoClick
                     try
                     {
                         Thread.Sleep(3000);
-                        for (int i = 1; i <= 26; i++)
+                        for (int i = 1; i <= 30; i++)
                         {
-                            Thread.Sleep(700);
+                            Thread.Sleep(200);
                             System.Windows.Forms.SendKeys.SendWait("{TAB}");
-                            if (i == 4 || i == 3)
+                            if (i == 4 )
                             {
                                 txtngaysinh.Text = "";
-                                Thread.Sleep(1000);
+                                Thread.Sleep(2000);
                                 SendKeys.SendWait("^c");
                                 Thread.Sleep(2000);
                                 //this.Invoke(new Action(() =>
@@ -466,7 +466,7 @@ namespace AutoClick
                                  txtngaysinh.Paste();
                                 Thread.Sleep(4000);
                                 string ngaysinh = txtngaysinh.Text;
-                                Thread.Sleep(1000);
+                                Thread.Sleep(2000);
                                 txtngaysinh.Text = "";
                                 if (ngaysinh.IndexOf("01/01") != -1)
                                 {
@@ -489,8 +489,8 @@ namespace AutoClick
                                    
                                 }
                             }
-                            if (i == 6)
-                            { Thread.Sleep(6000); }
+                            //if (i == 6)
+                            //{ Thread.Sleep(6000); }
                         }
                         #region // click xong
                         IJavaScriptExecutor js = (IJavaScriptExecutor)PropretiesCollection.driver;
