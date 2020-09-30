@@ -453,42 +453,42 @@ namespace AutoClick
                         {
                             Thread.Sleep(200);
                             System.Windows.Forms.SendKeys.SendWait("{TAB}");
-                            if (i == 4 )
-                            {
-                                txtngaysinh.Text = "";
-                                Thread.Sleep(2000);
-                                SendKeys.SendWait("^c");
-                                Thread.Sleep(2000);
-                                //this.Invoke(new Action(() =>
-                                //{
-                                //    txtngaysinh.Paste();
-                                //}));
-                                 txtngaysinh.Paste();
-                                Thread.Sleep(4000);
-                                string ngaysinh = txtngaysinh.Text;
-                                Thread.Sleep(2000);
-                                txtngaysinh.Text = "";
-                                if (ngaysinh.IndexOf("01/01") != -1)
-                                {
-                                    string temp = ngaysinh.Replace("01/01/", "");
-                                    try
-                                    {
+                            //if (i == 4 )
+                            //{
+                            //    txtngaysinh.Text = "";
+                            //    Thread.Sleep(2000);
+                            //    SendKeys.SendWait("^c");
+                            //    Thread.Sleep(2000);
+                            //    //this.Invoke(new Action(() =>
+                            //    //{
+                            //    //    txtngaysinh.Paste();
+                            //    //}));
+                            //     txtngaysinh.Paste();
+                            //    Thread.Sleep(4000);
+                            //    string ngaysinh = txtngaysinh.Text;
+                            //    Thread.Sleep(2000);
+                            //    txtngaysinh.Text = "";
+                            //    if (ngaysinh.IndexOf("01/01") != -1)
+                            //    {
+                            //        string temp = ngaysinh.Replace("01/01/", "");
+                            //        try
+                            //        {
                                       
-                                        PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div[1]/div/div[2]/div[2]/div[1]/form/div/div[10]/div/input")).SendKeys(temp);
+                            //            PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div[1]/div/div[2]/div[2]/div[1]/form/div/div[10]/div/input")).SendKeys(temp);
                                        
-                                    }
-                                    catch { }
-                                    try
-                                    {
+                            //        }
+                            //        catch { }
+                            //        try
+                            //        {
                                        
-                                        PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div[1]/div/div[2]/div[2]/div[1]/form/div/div[10]/div/input")).SendKeys(temp);
+                            //            PropretiesCollection.driver.SwitchTo().ActiveElement().FindElement(By.XPath("/html/body/div[2]/div/div/div[3]/div[1]/div/div[2]/div[2]/div[1]/form/div/div[10]/div/input")).SendKeys(temp);
                                        
-                                    }
-                                    catch { }
+                            //        }
+                            //        catch { }
                                     
                                    
-                                }
-                            }
+                            //    }
+                            //}
                             //if (i == 6)
                             //{ Thread.Sleep(6000); }
                         }
