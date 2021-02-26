@@ -43,6 +43,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.btncheckfinal = new System.Windows.Forms.Button();
             this.txtngaysinh = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txtsolanlap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtlapduyet)).BeginInit();
             this.SuspendLayout();
@@ -205,11 +206,22 @@
             this.txtngaysinh.Size = new System.Drawing.Size(100, 20);
             this.txtngaysinh.TabIndex = 14;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(25, 319);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(113, 43);
+            this.button5.TabIndex = 15;
+            this.button5.Text = "test";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 374);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.txtngaysinh);
             this.Controls.Add(this.btncheckfinal);
             this.Controls.Add(this.button4);
@@ -253,5 +265,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btncheckfinal;
         private System.Windows.Forms.TextBox txtngaysinh;
+        private System.Windows.Forms.Button button5;
     }
 }

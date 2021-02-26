@@ -330,6 +330,47 @@ namespace AutoWeb
             chay.Start();
         }
 
+        private void btnganbuucucthugom_Click(object sender, EventArgs e)
+        {
+             Thread chay = new Thread(() =>
+                {
+                    ChromePerformanceLoggingPreferences perfLogPrefs = new ChromePerformanceLoggingPreferences();
+                    perfLogPrefs.AddTracingCategories(new string[] { "devtools.timeline" });
+                    ChromeOptions options = new ChromeOptions();
+                    options.AddArguments("--disable-notifications");
+                    options.PerformanceLoggingPreferences = perfLogPrefs;
+                    options.SetLoggingPreference(LogType.Driver, LogLevel.All);
+                    options.SetLoggingPreference("performance", LogLevel.All);
+                    options.AddAdditionalCapability(CapabilityType.EnableProfiling, true, true);
+                    PropretiesCollection.driver = new ChromeDriver(options);
+                    PropretiesCollection.driver.Navigate().GoToUrl("https://pns.vnpost.vn/tin/thiet-lap-buu-cuc-thu-gom-tu-dong.html");
+                    PNS login = new PNS();
+                    login.login(txttaikhoanpns.Text,txtpasspns.Text);
+
+                    da_dmkhachhangmcs mcs = new da_dmkhachhangmcs();
+                    DataTable dt = new DataTable();
+                    dt = mcs.DanhSachkhachhangmcs(Cl_KetNoi.hamketnoisqlhtkh2015());
+                    if (dt.Rows.Count > 0)
+                    {
+                        foreach(DataRow r in dt.Rows)
+                        {
+                            string macrm=r["MaCRM"].ToString();
+                            string dienthoai = r["DienThoai"].ToString();
+                            string trungtam = r["IDCapTren"].ToString();
+                            string mabuucuc = r["MaBuuCuc"].ToString();
+                            PNS them = new PNS();
+                            int kq = them.GanTuDong(macrm, dienthoai, trungtam, mabuucuc);
+                            if (kq == 1)
+                            {
+                                da_dmkhachhangmcs xacnhan = new da_dmkhachhangmcs();
+                                xacnhan.DaTruyen(Cl_KetNoi.hamketnoisqlhtkh2015(), macrm, dienthoai);
+                            }
+                        }
+                    }
+                });
+              chay.Start();
+        }
+
       
         
     }

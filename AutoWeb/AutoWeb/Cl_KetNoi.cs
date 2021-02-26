@@ -15,7 +15,13 @@ namespace AutoWeb
             server = serverxuly.docdulieu(Environment.CurrentDirectory + "/CauHinhServer.xml");
             return new SqlConnection("server=" + server.Namer1 + ";database=" + server.Data1 + ";user id=" + server.User1 + ";password=" + server.Pass1 + "");
         }
-
+        public static SqlConnection hamketnoisqlhtkh2015()
+        {
+            CauHinhServerBE server = new CauHinhServerBE();
+            CauHinhServerBL serverxuly = new CauHinhServerBL();
+            server = serverxuly.docdulieu(Environment.CurrentDirectory + "/CauHinhServerHTKH2015.xml");
+            return new SqlConnection("server=" + server.Namer1 + ";database=" + server.Data1 + ";user id=" + server.User1 + ";password=" + server.Pass1 + "");
+        }
         public static void sqlDependency()
         {
             CauHinhServerBE server = new CauHinhServerBE();

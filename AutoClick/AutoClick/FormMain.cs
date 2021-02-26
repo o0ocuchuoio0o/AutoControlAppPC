@@ -14,6 +14,7 @@ using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Interactions;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
+using System.Diagnostics;
 
 namespace AutoClick
 {
@@ -537,5 +538,47 @@ namespace AutoClick
             t.Start();
         }
         #endregion
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var processInfo = new ProcessStartInfo("youtube-dl.exe", "https://www.youtube.com/watch?v=C0DPdy98e4c");
+            processInfo.CreateNoWindow = true;
+            processInfo.UseShellExecute = false;
+            processInfo.RedirectStandardError = true;
+            processInfo.RedirectStandardOutput = true;
+
+            var process = Process.Start(processInfo);
+            process.OutputDataReceived += (s, a) =>
+            {
+                if (!String.IsNullOrEmpty(a.Data))
+                {
+                    lblthongbao.Text += a.Data + Environment.NewLine;
+                }
+            };
+            //process.OutputDataReceived += (object sender, DataReceivedEventArgs e) =>
+            //Console.WriteLine("output>>" + e.Data);
+            process.BeginOutputReadLine();
+
+            //process.ErrorDataReceived += (object sender, DataReceivedEventArgs e) =>
+            //Console.WriteLine("error>>" + e.Data);
+            //process.BeginErrorReadLine();
+
+            process.WaitForExit();
+
+            Console.WriteLine("ExitCode: {0}", process.ExitCode);
+            process.Close();
+        }
+      
+        private void setLabelText(string text)
+        {
+            if (lblthongbao.InvokeRequired)
+            {
+                lblthongbao.Invoke((System.Action)(() => setLabelText(text)));
+            }
+            else
+            {
+                lblthongbao.Text = text;
+            }
+        }
     }
 }

@@ -31,6 +31,9 @@
             this.txttungay = new System.Windows.Forms.DateTimePicker();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lblxuly = new System.Windows.Forms.Label();
+            this.lblbuucuckhongsolieu = new System.Windows.Forms.Label();
+            this.btnchaylaithongtinphat = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtmatkhau = new System.Windows.Forms.TextBox();
@@ -48,14 +51,20 @@
             this.txttaikhoanchatluong = new System.Windows.Forms.TextBox();
             this.btnlaythongtinchatluong = new System.Windows.Forms.Button();
             this.txtngaychatluong = new System.Windows.Forms.DateTimePicker();
-            this.btnchaylaithongtinphat = new System.Windows.Forms.Button();
-            this.lblbuucuckhongsolieu = new System.Windows.Forms.Label();
-            this.lblxuly = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.KHMCS = new System.Windows.Forms.DataGridView();
+            this.btnganbuucucthugom = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtpasspns = new System.Windows.Forms.TextBox();
+            this.txttaikhoanpns = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txttimernghi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listbuucuc)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.KHMCS)).BeginInit();
             this.SuspendLayout();
             // 
             // txttungay
@@ -71,6 +80,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -101,6 +111,35 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thongtinphat.vnpost.vn";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // lblxuly
+            // 
+            this.lblxuly.AutoSize = true;
+            this.lblxuly.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblxuly.ForeColor = System.Drawing.Color.Lime;
+            this.lblxuly.Location = new System.Drawing.Point(644, 53);
+            this.lblxuly.Name = "lblxuly";
+            this.lblxuly.Size = new System.Drawing.Size(0, 13);
+            this.lblxuly.TabIndex = 117;
+            // 
+            // lblbuucuckhongsolieu
+            // 
+            this.lblbuucuckhongsolieu.AutoSize = true;
+            this.lblbuucuckhongsolieu.ForeColor = System.Drawing.Color.Red;
+            this.lblbuucuckhongsolieu.Location = new System.Drawing.Point(312, 53);
+            this.lblbuucuckhongsolieu.Name = "lblbuucuckhongsolieu";
+            this.lblbuucuckhongsolieu.Size = new System.Drawing.Size(0, 13);
+            this.lblbuucuckhongsolieu.TabIndex = 116;
+            // 
+            // btnchaylaithongtinphat
+            // 
+            this.btnchaylaithongtinphat.Location = new System.Drawing.Point(583, 27);
+            this.btnchaylaithongtinphat.Name = "btnchaylaithongtinphat";
+            this.btnchaylaithongtinphat.Size = new System.Drawing.Size(197, 23);
+            this.btnchaylaithongtinphat.TabIndex = 115;
+            this.btnchaylaithongtinphat.Text = "Chạy lại bưu cục không có dữ liệu";
+            this.btnchaylaithongtinphat.UseVisualStyleBackColor = true;
+            this.btnchaylaithongtinphat.Click += new System.EventHandler(this.btnchaylaithongtinphat_Click);
             // 
             // label4
             // 
@@ -267,34 +306,73 @@
             this.txtngaychatluong.Size = new System.Drawing.Size(216, 20);
             this.txtngaychatluong.TabIndex = 107;
             // 
-            // btnchaylaithongtinphat
+            // tabPage3
             // 
-            this.btnchaylaithongtinphat.Location = new System.Drawing.Point(583, 27);
-            this.btnchaylaithongtinphat.Name = "btnchaylaithongtinphat";
-            this.btnchaylaithongtinphat.Size = new System.Drawing.Size(197, 23);
-            this.btnchaylaithongtinphat.TabIndex = 115;
-            this.btnchaylaithongtinphat.Text = "Chạy lại bưu cục không có dữ liệu";
-            this.btnchaylaithongtinphat.UseVisualStyleBackColor = true;
-            this.btnchaylaithongtinphat.Click += new System.EventHandler(this.btnchaylaithongtinphat_Click);
+            this.tabPage3.Controls.Add(this.label7);
+            this.tabPage3.Controls.Add(this.label8);
+            this.tabPage3.Controls.Add(this.txtpasspns);
+            this.tabPage3.Controls.Add(this.txttaikhoanpns);
+            this.tabPage3.Controls.Add(this.btnganbuucucthugom);
+            this.tabPage3.Controls.Add(this.KHMCS);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(818, 513);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "PNS thu gom";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // lblbuucuckhongsolieu
+            // KHMCS
             // 
-            this.lblbuucuckhongsolieu.AutoSize = true;
-            this.lblbuucuckhongsolieu.ForeColor = System.Drawing.Color.Red;
-            this.lblbuucuckhongsolieu.Location = new System.Drawing.Point(312, 53);
-            this.lblbuucuckhongsolieu.Name = "lblbuucuckhongsolieu";
-            this.lblbuucuckhongsolieu.Size = new System.Drawing.Size(0, 13);
-            this.lblbuucuckhongsolieu.TabIndex = 116;
+            this.KHMCS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.KHMCS.Location = new System.Drawing.Point(30, 58);
+            this.KHMCS.Name = "KHMCS";
+            this.KHMCS.Size = new System.Drawing.Size(450, 353);
+            this.KHMCS.TabIndex = 106;
             // 
-            // lblxuly
+            // btnganbuucucthugom
             // 
-            this.lblxuly.AutoSize = true;
-            this.lblxuly.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblxuly.ForeColor = System.Drawing.Color.Lime;
-            this.lblxuly.Location = new System.Drawing.Point(644, 53);
-            this.lblxuly.Name = "lblxuly";
-            this.lblxuly.Size = new System.Drawing.Size(0, 13);
-            this.lblxuly.TabIndex = 117;
+            this.btnganbuucucthugom.Location = new System.Drawing.Point(30, 29);
+            this.btnganbuucucthugom.Name = "btnganbuucucthugom";
+            this.btnganbuucucthugom.Size = new System.Drawing.Size(100, 23);
+            this.btnganbuucucthugom.TabIndex = 109;
+            this.btnganbuucucthugom.Text = "Gắn tự động ";
+            this.btnganbuucucthugom.UseVisualStyleBackColor = true;
+            this.btnganbuucucthugom.Click += new System.EventHandler(this.btnganbuucucthugom_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(495, 36);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 13);
+            this.label7.TabIndex = 122;
+            this.label7.Text = "MK :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(495, 12);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(27, 13);
+            this.label8.TabIndex = 121;
+            this.label8.Text = "TK :";
+            // 
+            // txtpasspns
+            // 
+            this.txtpasspns.Location = new System.Drawing.Point(558, 33);
+            this.txtpasspns.Name = "txtpasspns";
+            this.txtpasspns.Size = new System.Drawing.Size(216, 20);
+            this.txtpasspns.TabIndex = 120;
+            this.txtpasspns.Text = "123456";
+            // 
+            // txttaikhoanpns
+            // 
+            this.txttaikhoanpns.Location = new System.Drawing.Point(558, 6);
+            this.txttaikhoanpns.Name = "txttaikhoanpns";
+            this.txttaikhoanpns.Size = new System.Drawing.Size(216, 20);
+            this.txttaikhoanpns.TabIndex = 119;
+            this.txttaikhoanpns.Text = "admin.bdhn";
             // 
             // FormMain
             // 
@@ -312,6 +390,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.listbuucuc)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.KHMCS)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -341,5 +422,12 @@
         private System.Windows.Forms.Button btnchaylaithongtinphat;
         private System.Windows.Forms.Label lblbuucuckhongsolieu;
         private System.Windows.Forms.Label lblxuly;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.DataGridView KHMCS;
+        private System.Windows.Forms.Button btnganbuucucthugom;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtpasspns;
+        private System.Windows.Forms.TextBox txttaikhoanpns;
     }
 }
